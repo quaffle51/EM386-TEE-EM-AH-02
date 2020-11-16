@@ -1,0 +1,204 @@
+=>PYTHONTEX#py#default#0#0#c####q1a.tex#12#
+print(int((7**2-1)/(7-1)))
+=>PYTHONTEX#py#default#0#1#c####q1c.tex#18#
+print(6*8)
+=>PYTHONTEX#py#default#0#2#c####q1c.tex#18#
+print(6**2 * 28)
+=>PYTHONTEX#py#default#0#3#c####q1c.tex#18#
+print(6**3 * 56)
+=>PYTHONTEX#py#default#0#4#c####q1c.tex#18#
+print(1 + 6*8 + 6**2 * 28 + 6**3 * 56)
+=>PYTHONTEX#py#default#0#1#c####q1c.tex#18#
+print(6*8)
+=>PYTHONTEX#py#default#0#2#c####q1c.tex#18#
+print(6**2 * 28)
+=>PYTHONTEX#py#default#0#3#c####q1c.tex#18#
+print(6**3 * 56)
+=>PYTHONTEX#py#default#0#4#c####q1c.tex#18#
+print(1 + 6*8 + 6**2 * 28 + 6**3 * 56)
+=>PYTHONTEX#py#default#0#5#c####q1c.tex#20#
+print(1 + 6*8 + 6**2 * 28 + 6**3 * 56)
+=>PYTHONTEX#octave#default#0#0#code####q1c.tex#23#
+function H = to_standard_form
+  n = 8;
+  k = 2;
+  G=[0, 1, 2, 4, 6, 4, 3, 5; 3, 2, 2, 6, 1, 2, 2, 0];
+  G = [mod(3*G(1,:),7); mod(5*G(2,:),7)];
+  G = [G(1,:); mod(G(2,:)-G(1,:),7)];
+  G = [mod(5*G(1,:),7);mod(1*G(2,:),7)];
+  G = [mod(1*G(2,:),7);mod(1*G(1,:),7)];
+  A = G(1:2,3:8);
+  H = [mod(-A',7),eye(n-k)];
+endfunction;
+
+=>PYTHONTEX#octave#default#0#1#code####q1c.tex#37#
+function result = syndrome(y, H)
+	result = mod(y * H', 7);
+endfunction
+
+H = to_standard_form;
+
+y1 = [1, 0, 0, 0, 0, 0, 0, 0];
+y2 = [0, 1, 0, 0, 0, 0, 0, 0];
+y3 = [0, 0, 1, 0, 0, 0, 0, 0];
+y4 = [0, 0, 0, 1, 0, 0, 0, 0];
+y5 = [0, 0, 0, 0, 1, 0, 0, 0];
+y6 = [0, 0, 0, 0, 0, 1, 0, 0];
+y7 = [0, 0, 0, 0, 0, 0, 1, 0];
+y8 = [0, 0, 0, 0, 0, 0, 0, 1];
+
+s1 = y1*H';
+s2 = y2*H';
+s3 = y3*H';
+s4 = y4*H';
+s5 = y5*H';
+s6 = y6*H';
+s7 = y7*H';
+s8 = y8*H';
+
+y = [4, 5, 6, 3, 2, 0, 3, 6];
+s = syndrome(y, H);
+=>PYTHONTEX#octave#default#0#2#i####q1c.tex#65#
+disp(y1)
+=>PYTHONTEX#octave#default#0#3#i####q1c.tex#65#
+disp(y2)
+=>PYTHONTEX#octave#default#0#4#i####q1c.tex#65#
+disp(y8)
+=>PYTHONTEX#octave#default#0#5#i####q1c.tex#65#
+disp(y)
+=>PYTHONTEX#octave#default#0#6#c####q1c.tex#65#
+disp(s)
+=>PYTHONTEX#octave#default#0#7#c####q1c.tex#65#
+disp(s2)
+=>PYTHONTEX#octave#default#0#8#c####q1c.tex#65#
+disp(mod(s2*3,7))
+=>PYTHONTEX#octave#default#0#9#c####q1c.tex#65#
+disp(y)
+=>PYTHONTEX#octave#default#0#10#c####q1c.tex#65#
+disp(y2)
+=>PYTHONTEX#octave#default#0#11#c####q1c.tex#65#
+disp(y2*3)
+=>PYTHONTEX#octave#default#0#12#c####q1c.tex#65#
+disp(y)
+=>PYTHONTEX#octave#default#0#13#c####q1c.tex#65#
+disp(y2*3)
+=>PYTHONTEX#octave#default#0#14#c####q1c.tex#65#
+disp(y-y2*3)
+=>PYTHONTEX#octave#default#0#15#c####q1c.tex#69#
+disp(y1)
+=>PYTHONTEX#octave#default#0#16#c####q1c.tex#69#
+disp(s1)
+=>PYTHONTEX#octave#default#0#17#c####q1c.tex#70#
+disp(y2)
+=>PYTHONTEX#octave#default#0#18#c####q1c.tex#70#
+disp(s2)
+=>PYTHONTEX#octave#default#0#19#c####q1c.tex#71#
+disp(y3)
+=>PYTHONTEX#octave#default#0#20#c####q1c.tex#71#
+disp(s3)
+=>PYTHONTEX#octave#default#0#21#c####q1c.tex#72#
+disp(y4)
+=>PYTHONTEX#octave#default#0#22#c####q1c.tex#72#
+disp(s4)
+=>PYTHONTEX#octave#default#0#23#c####q1c.tex#73#
+disp(y5)
+=>PYTHONTEX#octave#default#0#24#c####q1c.tex#73#
+disp(s5)
+=>PYTHONTEX#octave#default#0#25#c####q1c.tex#74#
+disp(y6)
+=>PYTHONTEX#octave#default#0#26#c####q1c.tex#74#
+disp(s6)
+=>PYTHONTEX#octave#default#0#27#c####q1c.tex#75#
+disp(y7)
+=>PYTHONTEX#octave#default#0#28#c####q1c.tex#75#
+disp(s7)
+=>PYTHONTEX#octave#default#0#29#c####q1c.tex#76#
+disp(y8)
+=>PYTHONTEX#octave#default#0#30#c####q1c.tex#76#
+disp(s8)
+=>PYTHONTEX#octave#default#0#31#code####q1e.tex#2#
+function sy = h_hat(y)
+
+      H =  [0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  0 ;
+            0  0  0  1  1  1  1  0  0  0  0  1  1  1  1  0 ;
+            0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0 ;
+            1  0  1  0  1  0  1  0  1  0  1  0  1  0  1  0 ;
+            1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1];
+
+      sy = mod(y * H', 2);
+endfunction
+
+y1 = [0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0];
+y2 = [0 0 0 1 1 0 0 1 1 1 1 0 0 1 1 1];
+y3 = [1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1];
+s1 = h_hat(y1);
+s2 = h_hat(y2);
+s3 = h_hat(y3);
+b1 = mod(s1 * [2^4 2^3 2^2 2^1 2^0]', 2);
+b2 = mod(s2 * [2^4 2^3 2^2 2^1 2^0]', 2);
+b3 = mod(s3 * [2^4 2^3 2^2 2^1 2^0]', 2);
+
+=>PYTHONTEX#octave#default#0#32#sub####q1e.tex#28#
+!{strcat(["$\\bm{y} = [$", num2str(y1), "$]$ so $S(\\bm{y}) = \\bm{y}\\hat{H}^T =[$", num2str(sy1=h_hat(y1)), "]"])}.
+=>PYTHONTEX#octave#default#0#33#c####q1e.tex#31#
+disp(sy1(5))
+=>PYTHONTEX#octave#default#0#34#c####q1e.tex#31#
+disp(sy1(1))
+=>PYTHONTEX#octave#default#0#35#c####q1e.tex#31#
+disp(sy1(2))
+=>PYTHONTEX#octave#default#0#36#c####q1e.tex#31#
+disp(sy1(3))
+=>PYTHONTEX#octave#default#0#37#c####q1e.tex#31#
+disp(sy1(4))
+=>PYTHONTEX#octave#default#0#38#c####q1e.tex#31#
+disp([sy1(1) sy1(2) sy1(3) sy1(4)]*[8 4 2 1]')
+=>PYTHONTEX#octave#default#0#39#sub####q1e.tex#33#
+!{strcat(["$\\bm{y} = [$", num2str(y2), "$]$ so $S(\\bm{y}) = \\bm{y}\\hat{H}^T =[$", num2str(sy2=h_hat(y2)), "]"])}.
+=>PYTHONTEX#octave#default#0#40#c####q1e.tex#36#
+disp(sy2(5))
+=>PYTHONTEX#octave#default#0#41#c####q1e.tex#36#
+disp(sy2(1))
+=>PYTHONTEX#octave#default#0#42#c####q1e.tex#36#
+disp(sy2(2))
+=>PYTHONTEX#octave#default#0#43#c####q1e.tex#36#
+disp(sy2(3))
+=>PYTHONTEX#octave#default#0#44#c####q1e.tex#36#
+disp(sy2(4))
+=>PYTHONTEX#octave#default#0#45#sub####q1e.tex#38#
+!{strcat(["$\\bm{y} = [$", num2str(y3), "$]$ so $S(\\bm{y}) = \\bm{y}\\hat{H}^T =[$", num2str(sy3=h_hat(y3)), "]"])}.
+=>PYTHONTEX#octave#default#0#46#c####q1e.tex#41#
+disp(sy3(5))
+=>PYTHONTEX#octave#default#0#47#c####q1e.tex#41#
+disp(sy3(1))
+=>PYTHONTEX#octave#default#0#48#c####q1e.tex#41#
+disp(sy3(2))
+=>PYTHONTEX#octave#default#0#49#c####q1e.tex#41#
+disp(sy3(3))
+=>PYTHONTEX#octave#default#0#50#c####q1e.tex#41#
+disp(sy3(4))
+=>PYTHONTEX:SETTINGS#
+version=0.17
+outputdir=pythontex-files-TMA02
+workingdir=.
+workingdirset=false
+gobble=none
+rerun=default
+hashdependencies=default
+makestderr=true
+stderrfilename=full
+keeptemps=all
+pyfuture=default
+pyconfuture=none
+pygments=true
+pygglobal=:GLOBAL||
+fvextfile=-1
+pyconbanner=none
+pyconfilename=stdin
+depythontex=false
+pygfamily=py|python3|
+pygfamily=pycon|pycon|
+pygfamily=sympy|python3|
+pygfamily=sympycon|pycon|
+pygfamily=pylab|python3|
+pygfamily=pylabcon|pycon|
+pygfamily=octave|octave|

@@ -1,0 +1,43 @@
+% !TeX root = ./TMA02.tex
+\begin{octavecode}
+function sy = h_hat(y)
+  
+      H =  [0  0  0  0  0  0  0  1  1  1  1  1  1  1  1  0 ; 
+            0  0  0  1  1  1  1  0  0  0  0  1  1  1  1  0 ; 
+            0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  0 ; 
+            1  0  1  0  1  0  1  0  1  0  1  0  1  0  1  0 ;
+            1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1];
+            
+      sy = mod(y * H', 2);
+endfunction
+
+y1 = [0 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0];
+y2 = [0 0 0 1 1 0 0 1 1 1 1 0 0 1 1 1];
+y3 = [1 1 0 0 0 0 0 0 0 0 0 0 0 0 1 1];
+s1 = h_hat(y1);
+s2 = h_hat(y2);
+s3 = h_hat(y3);
+b1 = mod(s1 * [2^4 2^3 2^2 2^1 2^0]', 2);
+b2 = mod(s2 * [2^4 2^3 2^2 2^1 2^0]', 2);
+b3 = mod(s3 * [2^4 2^3 2^2 2^1 2^0]', 2);
+
+\end{octavecode}
+Applying the algorithm of part~(d) to the following received vectors
+\begin{enumerate}
+\item
+\begin{octavesub}
+!{strcat(["$\\bm{y} = [$", num2str(y1), "$]$ so $S(\\bm{y}) = \\bm{y}\\hat{H}^T =[$", num2str(sy1=h_hat(y1)), "]"])}.
+\end{octavesub}
+So $s_5 = \octavec{disp(sy1(5))}$ with $(s_1, s_2, s_3, s_4) = (\octavec{disp(sy1(1))}, \octavec{disp(sy1(2))}, \octavec{disp(sy1(3))}, \octavec{disp(sy1(4))})\not=\bm{0}$. Therefore, assume an error in the  $ j = \octavec{disp([sy1(1) sy1(2) sy1(3) sy1(4)]*[8 4 2 1]')}$ place of $\bm{y}$.
+\item
+\begin{octavesub}
+!{strcat(["$\\bm{y} = [$", num2str(y2), "$]$ so $S(\\bm{y}) = \\bm{y}\\hat{H}^T =[$", num2str(sy2=h_hat(y2)), "]"])}.
+\end{octavesub}
+So $s_5 = \octavec{disp(sy2(5))}$ with $(s_1, s_2, s_3, s_4) = (\octavec{disp(sy2(1))}, \octavec{disp(sy2(2))}, \octavec{disp(sy2(3))}, \octavec{disp(sy2(4))})=\bm{0}$. Therefore, assume an error in the last place of $\bm{y}$.
+\item
+\begin{octavesub}
+!{strcat(["$\\bm{y} = [$", num2str(y3), "$]$ so $S(\\bm{y}) = \\bm{y}\\hat{H}^T =[$", num2str(sy3=h_hat(y3)), "]"])}.
+\end{octavesub}
+So $s_5 = \octavec{disp(sy3(5))}$ with $(s_1, s_2, s_3, s_4) = (\octavec{disp(sy3(1))}, \octavec{disp(sy3(2))}, \octavec{disp(sy3(3))}, \octavec{disp(sy3(4))})\not=\bm{0}$. Therefore, assume that at least two errors have occurred and request retransmission,
+\end{enumerate}
+

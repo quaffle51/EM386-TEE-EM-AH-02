@@ -1,0 +1,25 @@
+% !TeX root = ./TMA02.tex
+The extended binary Hamming code is the code obtained by from $\hat{\textrm{Ham}}(4,2)$  by adding an overall parity-check. Thus, parity-check matrix for an extended Hamming code $\hat{\textrm{Ham}}(4,2)$ is 
+\begin{equation*}
+\hat{H} = 
+\begin{bmatrix}
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 0 \\ 
+0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 1 & 1 & 1 & 1 & 0 \\ 
+0 & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & 0 & 0 & 1 & 1 & 0 \\ 
+1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 & 1 & 0 \\
+1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 & 1 \\
+\end{bmatrix}.
+\end{equation*}
+
+The incomplete decoding algorithm for this extended binary Hamming code is as follows. Suppose the received vector is $\bm{y}$.  Calculate the syndrome $S(\bm{y}) = \bm{y}\hat{H}^T$ such that $S(\bm{y}) = (s_1, s_2, s_3, s_4, s_5)$. Then
+\begin{enumerate}
+\item
+	If $s_5 = 0$ and $(s_1, s_2, s_3, s_4) = \bm{0}$, assume that no errors have occurred,
+\item
+	If $s_5 = 0$ and $(s_1, s_2, s_3, s_4) \not= \bm{0}$, assume that at least two errors have occurred and request retransmission,
+\item
+	If $s_5 = 1$ and $(s_1, s_2, s_3, s_4) = \bm{0}$, assume that a single error in the last place of $y$ has occurred,
+\item
+	If $s_5 = 1$ and $(s_1, s_2, s_3, s_4) \not= \bm{0}$, assume that a single error in the $j^{th}$ place, where $j$ is the number whose binary representation is $(s_1, s_2, s_3, s_4)$.
+\end{enumerate}
+

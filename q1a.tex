@@ -1,0 +1,175 @@
+% !TeX root = ./TMA02.tex
+In order to show that
+\[
+H_{ham} =
+\begin{pmatrix}
+0 & 1 & 2 & 4 & 6 & 4 & 3 & 5 \\ 
+3 & 2 & 2 & 6 & 1 & 2 & 2 & 0
+\end{pmatrix} 
+\]
+is a parity check matrix for a Hamming code Ham(2,7) consider the following.
+
+For Ham(2,7) we have $r=2$ and $q=7$ so any non-zero vector $\bm{v}$ in $V(2,7)$ has exactly $7-1=6$ non-zero scalar multiples, forming the set $\{\lambda \bm{v}|\lambda \in GF(7), \lambda\neq 0\}$. The $(7^2-1)/(7-1)=\pyc{print(int((7**2-1)/(7-1)))}$ such sets or classes are given below. 
+
+\[\left\{\begin{pmatrix}
+0 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+0 \\ 6 
+\end{pmatrix},\quad
+\begin{pmatrix}
+0 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+0 \\ 5 
+\end{pmatrix},\quad
+\begin{pmatrix}
+0 \\ 1 
+\end{pmatrix},\quad
+\begin{pmatrix}
+0 \\ 4 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+1 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+2 \\ 4 
+\end{pmatrix},\quad
+\begin{pmatrix}
+3 \\ 6 
+\end{pmatrix},\quad
+\begin{pmatrix}
+4 \\ 1 
+\end{pmatrix},\quad
+\begin{pmatrix}
+5 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+6 \\ 5 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+2 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+4 \\ 4 
+\end{pmatrix},\quad
+\begin{pmatrix}
+6 \\ 6 
+\end{pmatrix},\quad
+\begin{pmatrix}
+1 \\ 1 
+\end{pmatrix},\quad
+\begin{pmatrix}
+3 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+5 \\ 5 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+4 \\ 6 
+\end{pmatrix},\quad
+\begin{pmatrix}
+1 \\ 5 
+\end{pmatrix},\quad
+\begin{pmatrix}
+5 \\ 4 
+\end{pmatrix},\quad
+\begin{pmatrix}
+2 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+6 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+3 \\ 1 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+6 \\ 1 
+\end{pmatrix},\quad
+\begin{pmatrix}
+5 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+4 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+3 \\ 4 
+\end{pmatrix},\quad
+\begin{pmatrix}
+2 \\ 5 
+\end{pmatrix},\quad
+\begin{pmatrix}
+1 \\ 6 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+4 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+1 \\ 4 
+\end{pmatrix},\quad
+\begin{pmatrix}
+5 \\ 6 
+\end{pmatrix},\quad
+\begin{pmatrix}
+2 \\ 1 
+\end{pmatrix},\quad
+\begin{pmatrix}
+6 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+3 \\ 5 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+3 \\ 2 
+\end{pmatrix},\quad
+\begin{pmatrix}
+6 \\ 4 
+\end{pmatrix},\quad
+\begin{pmatrix}
+2 \\ 6 
+\end{pmatrix},\quad
+\begin{pmatrix}
+5 \\ 1 
+\end{pmatrix},\quad
+\begin{pmatrix}
+1 \\ 3 
+\end{pmatrix},\quad
+\begin{pmatrix}
+4 \\ 5 
+\end{pmatrix}
+\right\}
+\]
+\[\left\{\begin{pmatrix}
+5 \\ 0 
+\end{pmatrix},\quad
+\begin{pmatrix}
+3 \\ 0 
+\end{pmatrix},\quad
+\begin{pmatrix}
+1 \\ 0 
+\end{pmatrix},\quad
+\begin{pmatrix}
+6 \\ 0 
+\end{pmatrix},\quad
+\begin{pmatrix}
+4 \\ 0 
+\end{pmatrix},\quad
+\begin{pmatrix}
+2 \\ 0 
+\end{pmatrix}
+\right\}
+\]
+
+Each class contains exactly one column vector from the parity-check matrix $H$ and as such each column vectors of $H$ is linearly independent of any other. Thus, the given parity-check matrix, $H$, is that for a Hamming code Ham(2,7).
