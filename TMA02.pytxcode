@@ -176,6 +176,405 @@ disp(sy3(2))
 disp(sy3(3))
 =>PYTHONTEX#octave#default#0#50#c####q1e.tex#41#
 disp(sy3(4))
+=>PYTHONTEX#octave#default#0#51#c####q2a.tex#25#
+disp((5-1)/2)
+=>PYTHONTEX#octave#default#0#52#c####q2a.tex#25#
+disp((5-1)/2)
+=>PYTHONTEX#octave#default#0#53#code####q2b.tex#2#
+	function i = Inverse(x)
+	  T = [
+	      0 0 0 0 0 0 0;
+	      0 1 2 3 4 5 6;
+	      0 2 4 6 1 3 5;
+	      0 3 6 2 5 1 4;
+	      0 4 1 5 2 6 3;
+	      0 5 3 1 6 4 2;
+	      0 6 5 4 3 2 1
+	    ];
+	  i = 0;	
+	  if x != 0
+	    for j = [1 2 3 4 5 6 7]
+	      if T(x+1,j) != 1
+	        i++;
+	      else
+	        break;
+	      end
+	    end
+	  end
+	
+	endfunction
+	
+	y = [3 2 4 6 6 4];
+	
+	
+	H = [1^0 2^0 3^0 4^0 5^0 6^0;
+	     1^1 2^1 3^1 4^1 5^1 6^1;
+	     1^2 2^2 3^2 4^2 5^2 6^2;
+	     1^3 2^3 3^3 4^3 5^3 6^3
+	    ];
+	
+	H  = mod(H, 7);
+	
+	y1 = y(1);
+	y2 = y(2);
+	y3 = y(3);
+	y4 = y(4);
+	y5 = y(5);
+	y6 = y(6);
+	
+	S = mod(y*H', 7);
+	
+	S1a = S(1);
+	S2a = S(2);
+	S3a = S(3);
+	S4a = S(4);
+	H11 = H(1,1);
+	
+	function result =  Sj(j, y)
+		result = 0;
+		for i=[1 2 3 4 5 6]
+			result += y(i) * i^(j-1);
+		end
+		result = mod(result, 7);
+	endfunction
+	
+	S1 = Sj(1,y);
+	S2 = Sj(2,y);
+	S3 = Sj(3,y);
+	S4 = Sj(4,y);
+	
+	A1 = 4;
+	A2 = 1;
+	B1 = 4;
+	B2 = 2;
+	
+	#factor (1 + 4x + 2x^2) mod 7
+	Z2 = mod(-3,7);
+	Z1 = mod(-6,7);
+	z1 = Inverse(Z1);
+	z2 = Inverse(Z2);
+	
+	m1 = 2;
+	m2 = 2;
+	X1 = 1;
+	X2 = 2;
+	
+	v = [m1 m2 4 6 6 4];
+	sy = mod(v * H', 7);
+=>PYTHONTEX#octave#default#0#54#c####q2b.tex#84#
+disp(y)
+=>PYTHONTEX#octave#default#0#55#c####q2b.tex#87#
+disp(y)
+=>PYTHONTEX#octave#default#0#56#c####q2b.tex#112#
+disp(S1)
+=>PYTHONTEX#octave#default#0#57#c####q2b.tex#112#
+disp(S2)
+=>PYTHONTEX#octave#default#0#58#c####q2b.tex#112#
+disp(S3)
+=>PYTHONTEX#octave#default#0#59#c####q2b.tex#112#
+disp(S4)
+=>PYTHONTEX#octave#default#0#56#c####q2b.tex#112#
+disp(S1)
+=>PYTHONTEX#octave#default#0#57#c####q2b.tex#112#
+disp(S2)
+=>PYTHONTEX#octave#default#0#58#c####q2b.tex#112#
+disp(S3)
+=>PYTHONTEX#octave#default#0#59#c####q2b.tex#112#
+disp(S4)
+=>PYTHONTEX#octave#default#0#60#c####q2b.tex#130#
+disp(S1)
+=>PYTHONTEX#octave#default#0#61#c####q2b.tex#130#
+disp(S2)
+=>PYTHONTEX#octave#default#0#62#c####q2b.tex#130#
+disp(S1)
+=>PYTHONTEX#octave#default#0#63#c####q2b.tex#130#
+disp(S3)
+=>PYTHONTEX#octave#default#0#64#c####q2b.tex#130#
+disp(S2)
+=>PYTHONTEX#octave#default#0#65#c####q2b.tex#130#
+disp(S1)
+=>PYTHONTEX#octave#default#0#66#c####q2b.tex#130#
+disp(S4)
+=>PYTHONTEX#octave#default#0#67#c####q2b.tex#130#
+disp(S3)
+=>PYTHONTEX#octave#default#0#68#c####q2b.tex#130#
+disp(S2)
+=>PYTHONTEX#octave#default#0#60#c####q2b.tex#130#
+disp(S1)
+=>PYTHONTEX#octave#default#0#61#c####q2b.tex#130#
+disp(S2)
+=>PYTHONTEX#octave#default#0#62#c####q2b.tex#130#
+disp(S1)
+=>PYTHONTEX#octave#default#0#63#c####q2b.tex#130#
+disp(S3)
+=>PYTHONTEX#octave#default#0#64#c####q2b.tex#130#
+disp(S2)
+=>PYTHONTEX#octave#default#0#65#c####q2b.tex#130#
+disp(S1)
+=>PYTHONTEX#octave#default#0#66#c####q2b.tex#130#
+disp(S4)
+=>PYTHONTEX#octave#default#0#67#c####q2b.tex#130#
+disp(S3)
+=>PYTHONTEX#octave#default#0#68#c####q2b.tex#130#
+disp(S2)
+=>PYTHONTEX#octave#default#0#69#c####q2b.tex#154#
+disp(B1)
+=>PYTHONTEX#octave#default#0#70#c####q2b.tex#154#
+disp(4 * B1)
+=>PYTHONTEX#octave#default#0#71#c####q2b.tex#154#
+disp(6 + 16)
+=>PYTHONTEX#octave#default#0#72#c####q2b.tex#154#
+disp(mod(6 + 16,7))
+=>PYTHONTEX#octave#default#0#69#c####q2b.tex#154#
+disp(B1)
+=>PYTHONTEX#octave#default#0#70#c####q2b.tex#154#
+disp(4 * B1)
+=>PYTHONTEX#octave#default#0#71#c####q2b.tex#154#
+disp(6 + 16)
+=>PYTHONTEX#octave#default#0#72#c####q2b.tex#154#
+disp(mod(6 + 16,7))
+=>PYTHONTEX#octave#default#0#73#c####q2b.tex#155#
+disp(A1)
+=>PYTHONTEX#octave#default#0#74#c####q2b.tex#155#
+disp(A2)
+=>PYTHONTEX#octave#default#0#75#c####q2b.tex#155#
+disp(B1)
+=>PYTHONTEX#octave#default#0#76#c####q2b.tex#155#
+disp(B2)
+=>PYTHONTEX#octave#default#0#77#c####q2b.tex#160#
+disp(A1)
+=>PYTHONTEX#octave#default#0#78#c####q2b.tex#160#
+disp(B1)
+=>PYTHONTEX#octave#default#0#79#c####q2b.tex#160#
+disp(B2)
+=>PYTHONTEX#octave#default#0#77#c####q2b.tex#160#
+disp(A1)
+=>PYTHONTEX#octave#default#0#78#c####q2b.tex#160#
+disp(B1)
+=>PYTHONTEX#octave#default#0#79#c####q2b.tex#160#
+disp(B2)
+=>PYTHONTEX#octave#default#0#80#c####q2b.tex#161#
+disp(Z1)
+=>PYTHONTEX#octave#default#0#81#c####q2b.tex#161#
+disp(Z2)
+=>PYTHONTEX#octave#default#0#82#c####q2b.tex#161#
+disp(z1)
+=>PYTHONTEX#octave#default#0#83#c####q2b.tex#161#
+disp(z2)
+=>PYTHONTEX#octave#default#0#84#c####q2b.tex#170#
+disp(z2)
+=>PYTHONTEX#octave#default#0#85#c####q2b.tex#170#
+disp(z2)
+=>PYTHONTEX#octave#default#0#84#c####q2b.tex#170#
+disp(z2)
+=>PYTHONTEX#octave#default#0#85#c####q2b.tex#170#
+disp(z2)
+=>PYTHONTEX#octave#default#0#86#c####q2b.tex#179#
+disp(z2)
+=>PYTHONTEX#octave#default#0#87#c####q2b.tex#179#
+disp(z2)
+=>PYTHONTEX#octave#default#0#86#c####q2b.tex#179#
+disp(z2)
+=>PYTHONTEX#octave#default#0#87#c####q2b.tex#179#
+disp(z2)
+=>PYTHONTEX#octave#default#0#88#c####q2c.tex#31#
+disp(mod(1 + 1 + 0 + 5 + 2 + 5,7))
+=>PYTHONTEX#octave#default#0#89#c####q2c.tex#31#
+disp(mod( 1 + 2 + 3*0 + 4*5 + 5*2 + 6*5,7))
+=>PYTHONTEX#octave#default#0#90#c####q2c.tex#31#
+disp(mod(1 + 4 + 9*0 + 16*5 + 25*2 + 36*5,7))
+=>PYTHONTEX#octave#default#0#91#c####q2c.tex#31#
+disp(mod(1 + 8 + 27*0 + 64*5 + 125*2 + 216*5,7))
+=>PYTHONTEX#octave#default#0#88#c####q2c.tex#31#
+disp(mod(1 + 1 + 0 + 5 + 2 + 5,7))
+=>PYTHONTEX#octave#default#0#89#c####q2c.tex#31#
+disp(mod( 1 + 2 + 3*0 + 4*5 + 5*2 + 6*5,7))
+=>PYTHONTEX#octave#default#0#90#c####q2c.tex#31#
+disp(mod(1 + 4 + 9*0 + 16*5 + 25*2 + 36*5,7))
+=>PYTHONTEX#octave#default#0#91#c####q2c.tex#31#
+disp(mod(1 + 8 + 27*0 + 64*5 + 125*2 + 216*5,7))
+=>PYTHONTEX#octave#default#0#92#code####q2d.tex#2#
+	q = 7;
+	y1 = [1 1 0 5 2 5];
+	y2 = [1 0 4 6 6 4];
+	A = [4 6 6 4;3 6 3 1];
+	a11 = A(1,1);
+	a12 = A(1,2);
+	a13 = A(1,3);
+	a14 = A(1,4);
+	
+	a21 = A(2,1);
+	a22 = A(2,2);
+	a23 = A(2,3);
+	a24 = A(2,4);
+	G = [eye(2),A];
+	
+	v = [4, 5]
+	test1 = mod(v*G, q);
+	GT = G';
+	check = mod(H*G', q);
+=>PYTHONTEX#octave#default#0#93#c####q2d.tex#31#
+disp(y)
+=>PYTHONTEX#octave#default#0#94#c####q2d.tex#46#
+disp(y(1,1))
+=>PYTHONTEX#octave#default#0#95#c####q2d.tex#46#
+disp(y(1,2))
+=>PYTHONTEX#octave#default#0#96#c####q2d.tex#46#
+disp(y(1,1))
+=>PYTHONTEX#octave#default#0#97#c####q2d.tex#46#
+disp(y(1,2))
+=>PYTHONTEX#octave#default#0#94#c####q2d.tex#46#
+disp(y(1,1))
+=>PYTHONTEX#octave#default#0#95#c####q2d.tex#46#
+disp(y(1,2))
+=>PYTHONTEX#octave#default#0#96#c####q2d.tex#46#
+disp(y(1,1))
+=>PYTHONTEX#octave#default#0#97#c####q2d.tex#46#
+disp(y(1,2))
+=>PYTHONTEX#octave#default#0#98#c####q2d.tex#56#
+disp(a11)
+=>PYTHONTEX#octave#default#0#99#c####q2d.tex#57#
+disp(a12)
+=>PYTHONTEX#octave#default#0#100#c####q2d.tex#58#
+disp(a13)
+=>PYTHONTEX#octave#default#0#101#c####q2d.tex#59#
+disp(a14)
+=>PYTHONTEX#octave#default#0#102#c####q2d.tex#60#
+disp(a21)
+=>PYTHONTEX#octave#default#0#103#c####q2d.tex#61#
+disp(a22)
+=>PYTHONTEX#octave#default#0#104#c####q2d.tex#62#
+disp(a23)
+=>PYTHONTEX#octave#default#0#105#c####q2d.tex#63#
+disp(a24)
+=>PYTHONTEX#octave#default#0#106#c####q2d.tex#67#
+disp(G(1,1))
+=>PYTHONTEX#octave#default#0#107#c####q2d.tex#68#
+disp(G(1,2))
+=>PYTHONTEX#octave#default#0#108#c####q2d.tex#69#
+disp(G(1,3))
+=>PYTHONTEX#octave#default#0#109#c####q2d.tex#70#
+disp(G(1,4))
+=>PYTHONTEX#octave#default#0#110#c####q2d.tex#71#
+disp(G(1,5))
+=>PYTHONTEX#octave#default#0#111#c####q2d.tex#72#
+disp(G(1,6))
+=>PYTHONTEX#octave#default#0#112#c####q2d.tex#73#
+disp(G(2,1))
+=>PYTHONTEX#octave#default#0#113#c####q2d.tex#74#
+disp(G(2,2))
+=>PYTHONTEX#octave#default#0#114#c####q2d.tex#75#
+disp(G(2,3))
+=>PYTHONTEX#octave#default#0#115#c####q2d.tex#76#
+disp(G(2,4))
+=>PYTHONTEX#octave#default#0#116#c####q2d.tex#77#
+disp(G(2,5))
+=>PYTHONTEX#octave#default#0#117#c####q2d.tex#78#
+disp(G(2,6))
+=>PYTHONTEX#octave#default#0#118#code####q2e.tex#2#
+	v1 = [3 2 4 1 3 0];
+	c1 = mod([v1(1,1) v1(1,2)]*G, q);
+	v2 = [4 5 2 0 6 6];
+	c2 = mod([v2(1,1) v2(1,2)]*G, q);
+	c3 = mod([2 5]*G, q);
+=>PYTHONTEX#octave#default#0#119#c####q2e.tex#9#
+disp(v1)
+=>PYTHONTEX#octave#default#0#120#c####q2e.tex#11#
+disp(v1(1,1))
+=>PYTHONTEX#octave#default#0#121#c####q2e.tex#11#
+disp(v1(1,2))
+=>PYTHONTEX#octave#default#0#122#c####q2e.tex#13#
+disp(G(1,1))
+=>PYTHONTEX#octave#default#0#123#c####q2e.tex#14#
+disp(G(1,2))
+=>PYTHONTEX#octave#default#0#124#c####q2e.tex#15#
+disp(G(1,3))
+=>PYTHONTEX#octave#default#0#125#c####q2e.tex#16#
+disp(G(1,4))
+=>PYTHONTEX#octave#default#0#126#c####q2e.tex#17#
+disp(G(1,5))
+=>PYTHONTEX#octave#default#0#127#c####q2e.tex#18#
+disp(G(1,6))
+=>PYTHONTEX#octave#default#0#128#c####q2e.tex#19#
+disp(G(2,1))
+=>PYTHONTEX#octave#default#0#129#c####q2e.tex#20#
+disp(G(2,2))
+=>PYTHONTEX#octave#default#0#130#c####q2e.tex#21#
+disp(G(2,3))
+=>PYTHONTEX#octave#default#0#131#c####q2e.tex#22#
+disp(G(2,4))
+=>PYTHONTEX#octave#default#0#132#c####q2e.tex#23#
+disp(G(2,5))
+=>PYTHONTEX#octave#default#0#133#c####q2e.tex#24#
+disp(G(2,6))
+=>PYTHONTEX#octave#default#0#134#c####q2e.tex#26#
+disp(c1)
+=>PYTHONTEX#octave#default#0#135#c####q2e.tex#28#
+disp(v1)
+=>PYTHONTEX#octave#default#0#136#c####q2e.tex#28#
+disp(c1)
+=>PYTHONTEX#octave#default#0#137#c####q2e.tex#30#
+disp(v2)
+=>PYTHONTEX#octave#default#0#138#c####q2e.tex#32#
+disp(v2(1,1))
+=>PYTHONTEX#octave#default#0#139#c####q2e.tex#32#
+disp(v2(1,2))
+=>PYTHONTEX#octave#default#0#140#c####q2e.tex#34#
+disp(G(1,1))
+=>PYTHONTEX#octave#default#0#141#c####q2e.tex#35#
+disp(G(1,2))
+=>PYTHONTEX#octave#default#0#142#c####q2e.tex#36#
+disp(G(1,3))
+=>PYTHONTEX#octave#default#0#143#c####q2e.tex#37#
+disp(G(1,4))
+=>PYTHONTEX#octave#default#0#144#c####q2e.tex#38#
+disp(G(1,5))
+=>PYTHONTEX#octave#default#0#145#c####q2e.tex#39#
+disp(G(1,6))
+=>PYTHONTEX#octave#default#0#146#c####q2e.tex#40#
+disp(G(2,1))
+=>PYTHONTEX#octave#default#0#147#c####q2e.tex#41#
+disp(G(2,2))
+=>PYTHONTEX#octave#default#0#148#c####q2e.tex#42#
+disp(G(2,3))
+=>PYTHONTEX#octave#default#0#149#c####q2e.tex#43#
+disp(G(2,4))
+=>PYTHONTEX#octave#default#0#150#c####q2e.tex#44#
+disp(G(2,5))
+=>PYTHONTEX#octave#default#0#151#c####q2e.tex#45#
+disp(G(2,6))
+=>PYTHONTEX#octave#default#0#152#c####q2e.tex#47#
+disp(c2)
+=>PYTHONTEX#octave#default#0#153#c####q2e.tex#49#
+disp(v2)
+=>PYTHONTEX#octave#default#0#154#c####q2e.tex#53#
+disp(G(1,1))
+=>PYTHONTEX#octave#default#0#155#c####q2e.tex#54#
+disp(G(1,2))
+=>PYTHONTEX#octave#default#0#156#c####q2e.tex#55#
+disp(G(1,3))
+=>PYTHONTEX#octave#default#0#157#c####q2e.tex#56#
+disp(G(1,4))
+=>PYTHONTEX#octave#default#0#158#c####q2e.tex#57#
+disp(G(1,5))
+=>PYTHONTEX#octave#default#0#159#c####q2e.tex#58#
+disp(G(1,6))
+=>PYTHONTEX#octave#default#0#160#c####q2e.tex#59#
+disp(G(2,1))
+=>PYTHONTEX#octave#default#0#161#c####q2e.tex#60#
+disp(G(2,2))
+=>PYTHONTEX#octave#default#0#162#c####q2e.tex#61#
+disp(G(2,3))
+=>PYTHONTEX#octave#default#0#163#c####q2e.tex#62#
+disp(G(2,4))
+=>PYTHONTEX#octave#default#0#164#c####q2e.tex#63#
+disp(G(2,5))
+=>PYTHONTEX#octave#default#0#165#c####q2e.tex#64#
+disp(G(2,6))
+=>PYTHONTEX#octave#default#0#166#c####q2e.tex#66#
+disp(c3)
+=>PYTHONTEX#octave#default#0#167#c####q2e.tex#68#
+disp(c3)
 =>PYTHONTEX:SETTINGS#
 version=0.17
 outputdir=pythontex-files-TMA02

@@ -1,1 +1,217 @@
 % !TeX root = ./TMA02.tex
+\begin{octavecode}
+	function i = Inverse(x)
+	  T = [
+	      0 0 0 0 0 0 0;
+	      0 1 2 3 4 5 6;
+	      0 2 4 6 1 3 5;
+	      0 3 6 2 5 1 4;
+	      0 4 1 5 2 6 3;
+	      0 5 3 1 6 4 2;
+	      0 6 5 4 3 2 1
+	    ];
+	  i = 0;	
+	  if x != 0
+	    for j = [1 2 3 4 5 6 7]
+	      if T(x+1,j) != 1
+	        i++;
+	      else
+	        break;
+	      end
+	    end 
+	  end
+	  
+	endfunction
+	
+	y = [3 2 4 6 6 4];
+	
+	
+	H = [1^0 2^0 3^0 4^0 5^0 6^0;
+	     1^1 2^1 3^1 4^1 5^1 6^1;
+	     1^2 2^2 3^2 4^2 5^2 6^2;
+	     1^3 2^3 3^3 4^3 5^3 6^3
+	    ];
+	
+	H  = mod(H, 7);
+	
+	y1 = y(1);
+	y2 = y(2);
+	y3 = y(3);
+	y4 = y(4);
+	y5 = y(5);
+	y6 = y(6);
+	
+	S = mod(y*H', 7);
+	
+	S1a = S(1);
+	S2a = S(2);
+	S3a = S(3);
+	S4a = S(4);
+	H11 = H(1,1);
+	
+	function result =  Sj(j, y)
+		result = 0;
+		for i=[1 2 3 4 5 6]
+			result += y(i) * i^(j-1);
+		end
+		result = mod(result, 7);
+	endfunction
+	
+	S1 = Sj(1,y);
+	S2 = Sj(2,y);
+	S3 = Sj(3,y);
+	S4 = Sj(4,y);
+	
+	A1 = 4;
+	A2 = 1;
+	B1 = 4;
+	B2 = 2;
+	
+	#factor (1 + 4x + 2x^2) mod 7
+	Z2 = mod(-3,7);
+	Z1 = mod(-6,7);
+	z1 = Inverse(Z1);
+	z2 = Inverse(Z2);
+	
+	m1 = 2;
+	m2 = 2;
+	X1 = 1;
+	X2 = 2;
+	
+	v = [m1 m2 4 6 6 4];
+	sy = mod(v * H', 7);
+\end{octavecode}
+The received vector is $\octavec{disp(y)}$ and assume that two errors have occurred.
+Suppose that errors have occurred in positions $X_1$ and $X_2$ with respective magnitudes $m_1$ and $m_2$.  If no errors have occurred then $m_1 = m_2 = 0$ and if only one error has occurred then $m_2=0$.
+
+From the received vector $\bm{y} = \octavec{disp(y)}$ calculate the syndrome
+\[
+	(S_1,S_2,S_3,S_4) = \bm{y}H^T.
+\]
+That is we calculate\marginnote{\hill p.132.}[1.4cm]
+\begin{equation}
+	\label{eq:2.1}
+	S_j = \sum_{i=1}^6 y_i i^{j-1} = \sum_{i=1}^2 m_i X_i^{j-1} \textrm{ for } j=1,2,3,4,
+\end{equation}
+
+which gives the following syndrome for received vector $\bm{y}$ (see Table~\ref{tab:2})
+\begin{table}[!htp]\centering
+\begin{tabular}{l|rrrrrr|rr}\toprule
+$i\rightarrow$ &1 &2 &3 &4 &5 &6 & \\\cmidrule{1-7}
+$j\downarrow$ &3 &2 &4 &6 &6 &4 & $S_j$\\\midrule
+1 &3 &2 &4 &6 &6 &4 &4 \\
+2 &3 &4 &12 &24 &30 &24 &6 \\
+3 &3 &8 &36 &96 &150 &144 &3 \\
+4 &3 &16 &108 &384 &750 &864 &4 \\
+\bottomrule
+\end{tabular}
+\caption{Calculation of the syndrome from the received vector $\bm{y}$.}\label{tab:2}
+\end{table}
+\begin{align*}
+(S_1,S_2,S_3,S_4) &=  \left( \octavec{disp(S1)}, \octavec{disp(S2)}, \octavec{disp(S3)},\octavec{disp(S4)} \right).
+\end{align*}
+To find the errors the following systems of equations must be solved for $X_i$ and $m_i$
+\begin{align*}
+	m_1 + m_2 &= S_1\\
+	m_1X_1 + m_2X_2 &= S_2\\
+	m_1X_1^2 + m_2X_2^2 &= S_3\\
+	m_1X_1^3 + m_2X_2^3 &= S_4
+\end{align*}
+Assuming at most 2 errors in positions $X_1, X_2$ of respective magnitudes $m_1, m_2$ we have
+\[
+	\phi(\theta)=  \frac{m_1}{1-X_1\theta}+ \frac{m_2}{1-X_2\theta} = \frac{A_1 + A_2\theta}{1 + B_1\theta + B_2\theta^2}
+\]
+where, by 11.6 and 11.7 (\hill page~133), the $A_i$ and $B_i$ satisfy
+\begin{align*}
+	A_1 &= \octavec{disp(S1)}\\
+	A_2 &= \octavec{disp(S2)} + \octavec{disp(S1)} B_1\\
+	0   &= \octavec{disp(S3)} + \octavec{disp(S2)} B_1 + \octavec{disp(S1)}B_2\\
+	0   &= \octavec{disp(S4)} + \octavec{disp(S3)} B_1 + \octavec{disp(S2)} B_2.
+\end{align*}
+Solving for $B_1$ and $B_2$ first
+\begin{align*}
+	-3 &\equiv 6B_1 + 4B_2 \Mod{7}\\
+	-4 &\equiv 3B_1 + 6B_2 \Mod{7}\\\\
+	-3 &\equiv 6B_1 + 4B_2 \Mod{7}\\	
+	-8 &\equiv 6B_1 +12B_2 \Mod{7}\\\\
+	 4 &\equiv 6B_1 + 4B_2 \Mod{7}\\
+	 6 &\equiv 6B_1 + 5B_2 \Mod{7}\\
+	 2 &\equiv B_2 \Mod{7}\\\\
+	 4 &\equiv 6B_1 + 4\cdot 2 \Mod{7}\\
+	 4 &\equiv 6B_1 + 1 \Mod{7}\\
+	 3 &\equiv 6B_1 \Mod{7}\\
+	 3\cdot6^{-1} &\equiv B_1 \Mod{7}\\
+	 3\cdot6 &\equiv B_1 \Mod{7}\\
+	 4 &\equiv B_1 \Mod{7}.
+\end{align*}
+Then for $A_2$
+\begin{align*}
+	A_2 &\equiv 6 + 4\cdot B_1 \Mod{7}\\
+	A_2 &\equiv 6 + 4\cdot \octavec{disp(B1)} \Mod{7}\\
+	A_2 &\equiv 6 + \octavec{disp(4 * B1)} \Mod{7}\\
+	A_2 &\equiv \octavec{disp(6 + 16)} \Mod{7}\\
+	A_2 &\equiv \octavec{disp(mod(6 + 16,7))} \Mod{7}\\
+\end{align*}
+Thus, $A_1=\octavec{disp(A1)}$, $A_2=\octavec{disp(A2)}$, $B_1=\octavec{disp(B1)}$, and $B_2=\octavec{disp(B2)}$. Therefore,
+\begin{align*}
+	\phi(\theta) &= \frac{A_1 + A_2\theta}{1 + B_1\theta + B_2\theta^2}\\
+	 &= \frac{ \octavec{disp(A1)} + \theta}{1 + \octavec{disp(B1)}\theta + \octavec{disp(B2)}\theta^2}\\
+	&= \frac{4 + \theta}{2(\theta+3)(\theta + 6)}\Mod{7}.
+\end{align*}
+The zeros of the quadratic are $\octavec{disp(Z1)}$ and $\octavec{disp(Z2)}$. The error positions are the inverse of these values, i.e. $X_1=\octavec{disp(z1)}$ and $X_2=\octavec{disp(z2)}$.
+
+To find $m_1$:
+\begin{align*}
+	\frac{4 + \theta}{(1-\theta)(1-\octavec{disp(z2)}\theta)} &= \frac{m_1}{1-\theta} + \frac{m_2}{1-\octavec{disp(z2)}\theta}\\
+	\frac{4 + \theta}{1-2\theta} &= m_1 + \frac{m_2(1-\theta)}{1-2\theta}\\
+	\textrm{Let  $\theta = 1$ then},\quad\quad&\\
+	\frac{4 + 1}{1 - 2} &\equiv \frac{5}{6} \equiv 5\cdot 6 \equiv 2 \equiv m_1 \Mod{7}\\
+	m_1 &\equiv 2\Mod{7}.
+\end{align*}
+To find $m_2$:
+\begin{align*}
+	\frac{4 + \theta}{(1-\theta)(1-\octavec{disp(z2)}\theta)} &= \frac{m_1}{1-\theta} +
+	\frac{m_2}{1-\octavec{disp(z2)}\theta}\\
+	\frac{4 + \theta}{1-\theta} &=  \frac{m_1(1-2\theta)}{1-\theta} + m_2\\
+	\textrm{Let  $\theta = 4$ then},\qquad\qquad&\\
+	\frac{4 + 4}{1 - 4} &\equiv \frac{1}{4} \equiv 2 \equiv m_2 \Mod{7}\\
+	m_2 &\equiv 2\Mod{7}.
+\end{align*}
+Thus, $m_1=2$, $m_2=2, X_1=1$ and $X_2=2$. As a check we can recalculate the syndrome of the received vector as follows.
+\begin{align*}
+	S_1 &= m_1 + m_2 = 2 + 2 = 4,\\
+	S_2 &= m_1X_1 + m_2X_2 = 2\cdot1+ 2\cdot2 = 6,\\
+	S_3 &= m_1X_1^2 + m_2X_2^2 = 2\cdot1^2+ 2\cdot2^2 = 10 \equiv 3 \Mod{7},\\
+	S_3 &= m_1X_1^3 + m_2X_2^3 = 2\cdot1^3+ 2\cdot2^3 = 18 \equiv 4 \Mod{7}.\\
+\end{align*}
+These elements of the syndrome are the same as those previously calculated above using \eqref{eq:2.1}. 
+
+Now to obtain the transmitted codeword from the received vector $\bm{y}$ the error $m_i$ is such that $y_{X_{i}}=x_{X_{i}} + m_i$ which enables us to determine transmitted codeword $\bm{x}$ from the received vector $\bm{y}$.\marginnote{See p.14, $\bm{(6.11)}$ of Block~2 Course Notes.}[-1cm] Thus,
+\begin{align*}
+	y_{X_{i}}&=x_{X_{i}} + m_i \text{ where } i= 1,2.\\
+	y_{X_{1}}&=x_{X_{1}} + m_1,\\
+	y_1 &= x_1 + m_1,\\
+	3 &= x_1 + 2,\\
+	x_1 &= 1.
+\end{align*}
+\begin{align*}
+	y_{X_{2}}&=x_{X_{2}} + m_2,\\
+	y_2 &= x_2 + m_2,\\
+	2 &= x_2 + 2,\\
+	x_2 &= 0.
+\end{align*}
+Hence, the transmitted codeword was $104664$. This can be checked by calculating its syndrome, which if it is a valid codeword, will the $\bm{0}$. The calculation is summarised in Table~\ref{tab:3} where it is seen that the syndrome is indeed $\bm{0}$.
+\begin{table}[!htp]\centering
+\begin{tabular}{l|rrrrrr|rr}\toprule
+$i\rightarrow$ &1 &2 &3 &4 &5 &6 & \\\cmidrule{1-7}
+$j\downarrow$ &1 &0 &4 &6 &6 &4 &$S_j$ \\\midrule
+1 &1 &0 &4 &6 &6 &4 &0 \\
+2 &1 &0 &12 &24 &30 &24 &0 \\
+3 &1 &0 &36 &96 &150 &144 &0 \\
+4 &1 &0 &108 &384 &750 &864 &0 \\
+\bottomrule
+\end{tabular}
+\caption{Calculation of the syndrome from the received vector $\bm{y}=104664$.}\label{tab:3}
+\end{table}
+
+

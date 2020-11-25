@@ -1,1 +1,68 @@
 % !TeX root = ./TMA02.tex
+\begin{octavecode}
+	v1 = [3 2 4 1 3 0];
+	c1 = mod([v1(1,1) v1(1,2)]*G, q);
+	v2 = [4 5 2 0 6 6];
+	c2 = mod([v2(1,1) v2(1,2)]*G, q);
+	c3 = mod([2 5]*G, q);
+\end{octavecode}
+To find the error in the vector $\bm{y} = \octavec{disp(v1)}$ calculate
+\[
+	c = [\octavec{disp(v1(1,1))}\;\;\octavec{disp(v1(1,2))}]
+	\begin{pmatrix}
+	\octavec{disp(G(1,1))} & 
+	\octavec{disp(G(1,2))} &  
+	\octavec{disp(G(1,3))} &  
+	\octavec{disp(G(1,4))} &  
+	\octavec{disp(G(1,5))} & 
+	\octavec{disp(G(1,6))} \\ 
+	\octavec{disp(G(2,1))} & 
+	\octavec{disp(G(2,2))} &  
+	\octavec{disp(G(2,3))} &  
+	\octavec{disp(G(2,4))} &  
+	\octavec{disp(G(2,5))} & 
+	\octavec{disp(G(2,6))}
+	\end{pmatrix}
+	=\octavec{disp(c1)},
+\]
+and comparing this codeword with the received vector $\octavec{disp(v1)}$ we see that the single error is in the fourth place of the received vector.  Thus, the codeword sent was $\octavec{disp(c1)}$.
+
+To find the error in the vector $\bm{y} = \octavec{disp(v2)}$ calculate
+\[
+	c = [\octavec{disp(v2(1,1))}\;\;\octavec{disp(v2(1,2))}]
+	\begin{pmatrix}
+	\octavec{disp(G(1,1))} & 
+	\octavec{disp(G(1,2))} &  
+	\octavec{disp(G(1,3))} &  
+	\octavec{disp(G(1,4))} &  
+	\octavec{disp(G(1,5))} & 
+	\octavec{disp(G(1,6))} \\ 
+	\octavec{disp(G(2,1))} & 
+	\octavec{disp(G(2,2))} &  
+	\octavec{disp(G(2,3))} &  
+	\octavec{disp(G(2,4))} &  
+	\octavec{disp(G(2,5))} & 
+	\octavec{disp(G(2,6))}
+	\end{pmatrix}
+	=\octavec{disp(c2)},
+\]
+and comparing this codeword with the received vector $\octavec{disp(v2)}$ we see that the error must be in the first or second place of the received vector as there is only a single error in this vector. To find the error calculate in turn $[i\;\; j]G$ for $i \in GF(7)$ and $i \not=4$ and for $j \in GF(7)$ and $j \not=5$. After each calculation compare the calculated codeword with received vector. Stop when the comparison yields a difference in only one place between the codeword and the received vector. Implementing this algorithm it is seen that
+\[
+	c = [2\;\; 5]
+	\begin{pmatrix}
+	\octavec{disp(G(1,1))} & 
+	\octavec{disp(G(1,2))} &  
+	\octavec{disp(G(1,3))} &  
+	\octavec{disp(G(1,4))} &  
+	\octavec{disp(G(1,5))} & 
+	\octavec{disp(G(1,6))} \\ 
+	\octavec{disp(G(2,1))} & 
+	\octavec{disp(G(2,2))} &  
+	\octavec{disp(G(2,3))} &  
+	\octavec{disp(G(2,4))} &  
+	\octavec{disp(G(2,5))} & 
+	\octavec{disp(G(2,6))}
+	\end{pmatrix}
+	=\octavec{disp(c3)},
+\]
+Thus, the codeword sent was $\octavec{disp(c3)}$ where the error was in the first place of the received vector.

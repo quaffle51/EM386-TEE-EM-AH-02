@@ -1,1 +1,32 @@
 % !TeX root = ./TMA02.tex
+The values of $a, b, c$ and $d$ for which the vector $11abcd$ is a codeword is calculated as follows noting that the syndrome of a valid codeword is $S = \bm{0}$.
+\marginnote{\hill page 132.}[1cm]
+\[
+	S_j = \sum_{i=1}^n y_i i^{j-1}\textrm{ for } j=1, 2, \ldots, 2t.
+\]
+In our case $n=6$ and $t=2$, so that 
+\[
+	S_j = \sum_{i=1}^6 y_i i^{j-1}\textrm{ for } j=1, 2, 3, 4.
+\]
+Hence, we have
+\begin{align*}
+	S_1 &= 1 + 1 + a + b + c + d,\\
+	S_2 &= 1\cdot1 + 2\cdot1 + 3a + 4b + 5c + 6d,\\
+	S_3 &= 1\cdot1 + 2\cdot1^2 + 3^2a + 4^2b + 5^2c + 6^2d,\\
+	S_4 &= 1\cdot1 + 2\cdot1^3 + 3^3a + 4^3b + 5^3c + 6^3d.\\
+\end{align*}
+$S=\bm{0}$, so
+\begin{align*}
+	-2 &= a + b + c + d,\\
+	-3 &= 3a + 4b + 5c + 6d,\\
+	-5 &= 3^2a + 4^2b + 5^2c + 6^2d,\\
+	-9 &= 3^3a + 4^3b + 5^3c + 6^3d,\\
+\end{align*}
+Solving these simultaneous equations gives $a=0,\ b=5,\ c=2$ and $d=5$. Thus, the codeword is $y=110525$.  Check:
+\begin{align*}
+	S_1 &= 1 + 1 + 0 + 5 + 2 + 5 \equiv \octavec{disp(mod(1 + 1 + 0 + 5 + 2 + 5,7))} \Mod{7},\\
+	S_2 &= 1 + 2 + 3\cdot0 + 4\cdot5 + 5\cdot2 + 6\cdot5 \equiv \octavec{disp(mod( 1 + 2 + 3*0 + 4*5 + 5*2 + 6*5,7))} \Mod{7},\\
+	S_3 &= 1 + 4  + 9\cdot0 + 16\cdot5 + 25\cdot2 + 36\cdot5 \equiv \octavec{disp(mod(1 + 4  + 9*0 + 16*5 + 25*2 + 36*5,7))} \Mod{7},\\
+	S_4 &= 1 + 8 + 27\cdot0 + 64\cdot5 + 125\cdot0 + 216\cdot5 \equiv \octavec{disp(mod(1 + 8 + 27*0 + 64*5 + 125*2 + 216*5,7))} \Mod{7}.
+\end{align*}
+So,  $y=110525$ is a valid codeword checks out to be $\bm{0}$.
