@@ -1,1 +1,409 @@
 % !TeX root = ./TMA02.tex
+The generator matrix for $RM(1, 4)$ is given as  follows
+\marginnote{See Example~7.7 B2CN's p.36.}
+\[
+G = 
+\begin{pmatrix}[lrrrrrrrrrrrrrrrr]
+1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 \\
+0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 \\
+0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 \\
+0 &0 &0 &0 &1 &1 &1 &1 &0 &0 &0 &0 &1 &1 &1 &1 \\
+0 &0 &0 &0 &0 &0 &0 &0 &1 &1 &1 &1 &1 &1 &1 &1 \\
+\end{pmatrix}.
+\]
+To obtain the equations needed to apply the Reed decoding algorithm we need to find first the values $x_1, x_2, x_3, x_4$ and $x_5$ as follows.
+\[
+	\bm{x}=
+	\begin{pmatrix}[lrrrrr]
+	a_0 & a_1 & a_2 & a_3 & a_4 
+	\end{pmatrix}
+	\begin{pmatrix}[lrrrrrrrrrrrrrrrr]
+     1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 \\
+     0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 \\
+     0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 \\
+     0 &0 &0 &0 &1 &1 &1 &1 &0 &0 &0 &0 &1 &1 &1 &1 \\
+     0 &0 &0 &0 &0 &0 &0 &0 &1 &1 &1 &1 &1 &1 &1 &1 \\
+    \end{pmatrix}.
+\]
+Thus,
+\begin{align}
+\label{eq:3.1}
+	x_0 &= a_0\\
+	\label{eq:3.2}
+	x_1 &= a_0 + a_1\\
+	\label{eq:3.3}
+	x_2 &= a_0 + a_2\\
+	\label{eq:3.4}
+	x_3 &= a_0 + a_1 + a_2\\
+	\label{eq:3.5}
+	x_4 &= a_0 + a_3\\
+	\label{eq:3.6}
+	x_5 &= a_0 + a_1 + a_3\\
+	\label{eq:3.7}
+	x_6 &= a_0 + a_2 + a_3\\
+	\label{eq:3.8}
+	x_7 &= a_0 + a_1 + a_2 + a_3\\
+	\label{eq:3.9}
+	x_8 &= a_0 + a_4\\
+	\label{eq:3.10}
+	x_9 &= a_0 + a_1 + a_4\\
+	\label{eq:3.11}
+	x_{10} &= a_0 + a_2 + a_4\\
+	\label{eq:3.12}
+	x_{11} &= a_0 + a_1 + a_2 + a_4\\
+	\label{eq:3.13}
+	x_{12} &= a_0 + a_3 + a_4\\
+	\label{eq:3.14}
+	x_{13} &= a_0 + a_1 + a_3 +a_4\\
+	\label{eq:3.14}
+	x_{14} &= a_0 + a_2 +a_3 + a_4\\
+	\label{eq:3.16}
+	x_{15} &= a_0 + a_1 + a_2 + a_3 + a_4
+\end{align}
+\begin{enumerate}[label=(\roman*)]
+\item The equations needed to apply the Reed decoding algorithm are as follows.
+\begin{align}
+	a_1 &= x_0 + x_1\\
+	a_1 &= x_2 + x_3\\
+	a_1 &= x_4 + x_5\\
+	a_1 &= x_6 + x_7\\
+	a_1 &= x_8 + x_9\\
+	a_1 &= x_{10} + x_{11}\\
+	a_1 &= x_{12} + x_{13}\\
+	a_1 &= x_{14} + x_{15}
+\end{align}
+\begin{align}
+	a_2 &= x_0 + x_2\\
+	a_2 &= x_1 + x_3\\
+	a_2 &= x_4 + x_6\\
+	a_2 &= x_5 + x_7\\
+	a_2 &= x_8 + x_{10}\\
+	a_2 &= x_{9} + x_{11}\\
+	a_2 &= x_{12} + x_{14}\\
+	a_2 &= x_{13} + x_{15}
+\end{align}
+\begin{align}
+	a_3 &= x_0 + x_4\\
+	a_3 &= x_1 + x_5\\
+	a_3 &= x_2 + x_6\\
+	a_3 &= x_3 + x_7\\
+	a_3 &= x_8 + x_{12}\\
+	a_3 &= x_{9} + x_{13}\\
+	a_3 &= x_{10} + x_{14}\\
+	a_3 &= x_{11} + x_{15}
+\end{align}
+\begin{align}
+	a_4 &= x_0 + x_8\\
+	a_4 &= x_1 + x_9\\
+	a_4 &= x_2 + x_{10}\\
+	a_4 &= x_3 + x_{11}\\
+	a_4 &= x_4 + x_{12}\\
+	a_4 &= x_{5} + x_{13}\\
+	a_4 &= x_{6} + x_{14}\\
+	a_4 &= x_{7} + x_{15}
+\end{align}
+The first equation for $a_0$ is simply $a_0 = x_0$. To obtain the remaining fifteen equations for $a_0$ we make use of the sixteen equations $x_0$ to $x_{15}$ \eqref{eq:3.1} to \eqref{eq:3.16}, respectively. Explaining how the equations for $a_0$ are determined is best illustrated by an example of how we find one of them. Consider the expression for $x_7$ given by \eqref{eq:3.7}:
+
+\begin{equation}
+	a_7 = a_0 + a_1 + a_2 + a_3.
+\end{equation}
+Now, we have eight expressions each for $a_1$, $a_2$, $a_3$ and $a_4$, and the strategy we take is to maximise the number of terms in the expression for $a_0$, thus we choose $a_1 = x_0 + x_1$, $a_2 = x_4 + x_6$, and $x_3 = x_8 + x_{12}$, to give
+\begin{equation}
+\label{eq:3.50}
+	x_7 = a_0 + x_0 + x_1 + x_4 + x_6 + x_8 + x_{12}.
+\end{equation}
+Then, rearranging \eqref{eq:3.50} in terms of $a_0$ we obtain
+\begin{equation}
+	a_0 = x_7 - (x_0 + x_1 + x_4 + x_6 + x_8 + x_{12}).
+\end{equation}
+As each  $x_i \in GF(2)$ and we are using modulo 2 arithmetic we obtain
+\begin{equation}
+	a_0 = x_0 + x_1 + x_4 + x_6 + x_7 + x_8 + x_{12}.
+\end{equation}
+However, do note that it is possible to generate duplicate equations. In such cases a different choice for one or more of $a_1, a_2,\ldots,a_4$ should be made, while still trying to maximise the number of terms in the expression for $a_0$, for substitution into the expression for $x_i$.
+
+The remaining equations for $a_0$ are found in a similar fashion.
+\item
+To determine the original message word from the received vector $1100 1111 0011 1011$ assuming at most three transmission errors, we first determine the majority votes for each of $a_1$, $a_2$, $a_3$ and $a_4$. 
+\begin{octavecode}
+	x = [1 1 0 0 1 1 1 1 0 0 1 1 1 0 1 1];
+	x_0 = x(1,1);
+	x_1 = x(1,2);
+	x_2 = x(1,3);
+	x_3 = x(1,4);
+	x_4 = x(1,5);
+	x_5 = x(1,6);
+	x_6 = x(1,7);
+	x_7 = x(1,8);
+	x_8 = x(1,9);
+	x_9 = x(1,10);
+	x_10 = x(1,11);
+	x_11 = x(1,12);
+	x_12 = x(1,13);
+	x_13 = x(1,14);
+	x_14 = x(1,15);
+	x_15 = x(1,16);
+	
+	a = [0 0 1 0 1; 1 0 1 0 1];
+	a0_1=a(1,1);
+	a1_1=a(1,2);
+	a2_1=a(1,3);
+	a3_1=a(1,4);
+	a4_1=a(1,5);
+	
+	a0_2=a(2,1);
+	a1_2=a(2,2);
+	a2_2=a(2,3);
+	a3_2=a(2,4);
+	a4_2=a(2,5);
+	a_1 = sprintf("\%d & \%d & \%d & \%d & \%d", a0_1,a1_1,a2_1,a3_1,a4_1);
+	a_2 = sprintf("\%d & \%d & \%d & \%d & \%d", a0_2,a1_2,a2_2,a3_2,a4_2);
+	G= [
+         1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  1  ;
+         0  1  0  1  0  1  0  1  0  1  0  1  0  1  0  1  ;
+         0  0  1  1  0  0  1  1  0  0  1  1  0  0  1  1  ;
+         0  0  0  0  1  1  1  1  0  0  0  0  1  1  1  1  ;
+         0  0  0  0  0  0  0  0  1  1  1  1  1  1  1  1 
+       ];
+    v1 = a(1,:);
+    xx_1 = mod(v1*G,2);
+    
+    v2 = a(2,:);
+    xx_2 = mod(v2*G,2);
+\end{octavecode}
+\begin{comment}
+\begin{align*}
+	a_0 &= x_0 = \octavec{disp(x_0)}\\
+	a_0 &= x_1 + x_{14} + x_{15}\\
+	&= \octavec{disp(x_1)} + 
+	   \octavec{disp(x_14)} + 
+	   \octavec{disp(x_15)} = \octavec{disp(mod(x_1 + x_14+x_15,2))}\\
+	a_0 &= x_2 + x_{13} + x_{15}\\
+	&= \octavec{disp(x_2)} + 
+	   \octavec{disp(x_13)} + 
+	   \octavec{disp(x_15)} = \octavec{disp(mod(x_2 + x_13+x_15,2))}\\
+	a_0 &= x_3 + x_9 + x_{11} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_3)} + 
+	   \octavec{disp(x_9)} + 
+	   \octavec{disp(x_11)}+
+	   \octavec{disp(x_14)}+ 
+	   \octavec{disp(x_15)} = \octavec{disp(mod(x_3 + x_9+x_11+x_14+x_15,2))}\\
+	a_0 &= x_4 + x_{11} + x_{15}\\
+	&= \octavec{disp(x_4)} + 
+	   \octavec{disp(x_11)} + 
+	   \octavec{disp(x_15)} = \octavec{disp(mod(x_4 + x_11+x_15,2))}\\
+	a_0 &= x_5 + x_9 + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_5)} + 
+	   \octavec{disp(x_9)} + 
+	   \octavec{disp(x_13)} + 
+	   \octavec{disp(x_14)} + 
+	   \octavec{disp(x_15)} = \octavec{disp(mod(x_5 + x_9 + x_13 + x_14 + x_15,2))}\\
+	a_0 &= x_6 + x_{10} + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_6)} + 
+	   \octavec{disp(x_10)} + 
+	   \octavec{disp(x_13)} + 
+	   \octavec{disp(x_14)} + 
+	   \octavec{disp(x_15)} = \octavec{disp(mod(x_6 + x_10 + x_13 + x_14 + x_15,2))}\\
+	a_0 &= x_7 + x_8 + x_9 + x_{11} + x_{12} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_7)} + 
+	  \octavec{disp(x_8)} + 
+	  \octavec{disp(x_9)} + 
+	  \octavec{disp(x_11)} + 
+	  \octavec{disp(x_12)} + 
+	  \octavec{disp(x_14)} + 
+	  \octavec{disp(x_15)} = \octavec{disp(mod(x_7 + x_8 + x_9 + x_11 + x_12 + x_14+x_15,2))}\\
+	a_0 &= x_7 + x_8 + x_{15}
+	= \octavec{disp(x_7)} + \octavec{disp(x_8)} + \octavec{disp(x_15)} = \octavec{disp(mod(x_7 + x_8+x_15,2))}\\
+	a_0 &= x_5 + x_9 + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_5)} + \octavec{disp(x_9)} + \octavec{disp(x_13)} + \octavec{disp(x_14)} + \octavec{disp(x_15)} = \octavec{disp(mod(x_5 + x_9+x_13+x_14+x_15,2))}\\
+	a_0 &= x_6 + x_{10} + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_6)} + 
+	  \octavec{disp(x_10)} + 
+	  \octavec{disp(x_13)} + 
+	  \octavec{disp(x_14)} + 
+	  \octavec{disp(x_15)} = 
+	  \octavec{disp(mod(x_6 + x_10 + x_13 + x_14 + x_15,2))}\\
+	a_0 &= x_5 + x_8 + x_{10} + x_{11} + x_{13} + x_{14} + x_{15},\\
+	a_0 &= x_6 + x_{11} + x_{12} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_6)} + 
+	  \octavec{disp(x_11)} + 
+	  \octavec{disp(x_12)} + 
+	  \octavec{disp(x_14)} + 
+	  \octavec{disp(x_15)}
+	   = \octavec{disp(mod(x_6 + x_11 + x_12 + x_14 + x_15,2))}\\
+	a_0 &= x_3 + x_8 + x_{11} + x_{12} + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_3)} + 
+	  \octavec{disp(x_8)} + 
+	  \octavec{disp(x_11)} + 
+	  \octavec{disp(x_12)} + 
+	  \octavec{disp(x_13)} +
+	  \octavec{disp(x_14)} +
+	  \octavec{disp(x_15)} 
+	  = 
+	  \octavec{disp(mod(x_3 + x_8 + x_11 + x_12 + x_13 + x_14 + x_15,2))}\\
+	a_0 &= x_2 + x_8 + x_{10} + x_{12} + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_2)} + 
+	  \octavec{disp(x_8)} + 
+	  \octavec{disp(x_10)} + 
+	  \octavec{disp(x_12)} + 
+	  \octavec{disp(x_13)} +
+	  \octavec{disp(x_14)} +
+	  \octavec{disp(x_15)} 
+	  = 
+	  \octavec{disp(mod(x_2 + x_8 + x_10 + x_12 + x_13 + x_14 + x_15,2))}\\
+	a_0 &= x_0 + x_8 + x_9 + x_{10} + x_{11} + x_{12} + x_{13} + x_{14} + x_{15}\\
+	&= \octavec{disp(x_0)} + 
+	  \octavec{disp(x_8)} + 
+	  \octavec{disp(x_9)} + 
+	  \octavec{disp(x_10)} + 
+	  \octavec{disp(x_11)} + 
+	  \octavec{disp(x_12)} + 
+	  \octavec{disp(x_13)} +
+	  \octavec{disp(x_14)} +
+	  \octavec{disp(x_15)} 
+	  = 
+	  \octavec{disp(mod(x_0 + x_8 + +x_9 +x_10 + x_11+ x_12 + x_13 + x_14 + x_15,2))}
+\end{align*}
+\end{comment}%
+
+Recall from above that the eight equations for $a_1$ were as follows. 
+\begin{align*}
+	a_1 &= x_0 + x_1\\
+	a_1 &= x_2 + x_3\\
+	a_1 &= x_4 + x_5\\
+	a_1 &= x_6 + x_7\\
+	a_1 &= x_8 + x_9\\
+	a_1 &= x_{10} + x_{11}\\
+	a_1 &= x_{12} + x_{13}\\
+	a_1 &= x_{14} + x_{15}
+\end{align*}
+With, $x_1x_2\ldots x_{15}=1100111100111011$, these give eight values to each $a_1$, namely
+
+\begin{align*}
+	a_1 &= x_0 + x_1
+	= \octavec{disp(x_0)}+ \octavec{disp(x_1)} = \octavec{disp(mod(x_0+x_1,2))},\\
+	a_1 &= x_2 + x_3
+	= \octavec{disp(x_2)}+ \octavec{disp(x_3)} = \octavec{disp(mod(x_2+x_3,2))},\\
+	a_1 &= x_4 + x_5
+	= \octavec{disp(x_4)}+ \octavec{disp(x_5)} = \octavec{disp(mod(x_4+x_5,2))},\\
+	a_1 &= x_6 + x_7
+	= \octavec{disp(x_6)}+ \octavec{disp(x_7)} = \octavec{disp(mod(x_6+x_7,2))},\\
+	a_1 &= x_8 + x_9
+	= \octavec{disp(x_8)}+ \octavec{disp(x_9)} = \octavec{disp(mod(x_8+x_9,2))},\\
+	a_1 &= x_{10} + x_{11}
+	= \octavec{disp(x_10)}+ \octavec{disp(x_11)} = \octavec{disp(mod(x_10+x_11,2))},\\
+	a_1 &= x_{12} + x_{13}
+	= \octavec{disp(x_12)}+ \octavec{disp(x_13)} = \octavec{disp(mod(x_12+x_13,2))},\\
+	a_1 &= x_{14} + x_{15}
+	= \octavec{disp(x_14)}+ \octavec{disp(x_15)} = \octavec{disp(mod(x_14+x_15,2))}.
+\end{align*}
+The majority vote is in favour of $0$ and therefore $a_1 = 0$.  
+
+Repeating the above for $a_2$, $a_3$ and $a_4$ as follows.
+
+With, $x_1x_2\ldots x_{15}=1100111100111011$, these give eight values to each $a_2$, namely
+\begin{align*}
+	a_2 &= x_0 + x_2
+	= \octavec{disp(x_0)}+ \octavec{disp(x_2)} = \octavec{disp(mod(x_0+x_2,2))},\\
+	a_2 &= x_1 + x_3
+	= \octavec{disp(x_1)}+ \octavec{disp(x_3)} = \octavec{disp(mod(x_1+x_3,2))},\\
+	a_2 &= x_4 + x_6
+	= \octavec{disp(x_4)}+ \octavec{disp(x_6)} = \octavec{disp(mod(x_4+x_6,2))},\\
+	a_2 &= x_5 + x_7
+	= \octavec{disp(x_5)}+ \octavec{disp(x_7)} = \octavec{disp(mod(x_5+x_7,2))},\\
+	a_2 &= x_8 + x_{10}
+	= \octavec{disp(x_8)}+ \octavec{disp(x_10)} = \octavec{disp(mod(x_8+x_10,2))},\\
+	a_2 &= x_{9} + x_{11}
+	= \octavec{disp(x_9)}+ \octavec{disp(x_11)} = \octavec{disp(mod(x_9+x_11,2))},\\
+	a_2 &= x_{12} + x_{14}
+	= \octavec{disp(x_12)}+ \octavec{disp(x_14)} = \octavec{disp(mod(x_12+x_14,2))},\\
+	a_2 &= x_{13} + x_{15}
+	= \octavec{disp(x_13)}+ \octavec{disp(x_15)} = \octavec{disp(mod(x_13+x_15,2))}.
+\end{align*}
+The majority vote is in favour of $1$ and therefore $a_2 = 1$.
+
+With, $x_1x_2\ldots x_{15}=1100111100111011$, these give eight values to each $a_3$, namely
+\begin{align*}
+	a_3 &= x_0 + x_4
+	= \octavec{disp(x_0)}+ \octavec{disp(x_4)} = \octavec{disp(mod(x_0+x_4,2))},\\
+	a_3 &= x_1 + x_5
+	= \octavec{disp(x_1)}+ \octavec{disp(x_5)} = \octavec{disp(mod(x_1+x_5,2))},\\
+	a_3 &= x_2 + x_6
+	= \octavec{disp(x_2)}+ \octavec{disp(x_6)} = \octavec{disp(mod(x_2+x_6,2))},\\
+	a_3 &= x_3 + x_7
+	= \octavec{disp(x_3)}+ \octavec{disp(x_7)} = \octavec{disp(mod(x_3+x_7,2))},\\
+	a_3 &= x_8 + x_{12}
+	= \octavec{disp(x_8)}+ \octavec{disp(x_12)} = \octavec{disp(mod(x_8+x_12,2))},\\
+	a_3 &= x_{9} + x_{13}
+	= \octavec{disp(x_9)}+ \octavec{disp(x_13)} = \octavec{disp(mod(x_9+x_13,2))},\\
+	a_3 &= x_{10} + x_{14}
+	= \octavec{disp(x_10)}+ \octavec{disp(x_14)} = \octavec{disp(mod(x_10+x_14,2))},\\
+	a_3 &= x_{11} + x_{15}
+	= \octavec{disp(x_11)}+ \octavec{disp(x_15)} = \octavec{disp(mod(x_11+x_15,2))}.
+\end{align*}
+The majority vote is in favour of $0$ and therefore $a_3 = 0$.
+
+With, $x_1x_2\ldots x_{15}=1100111100111011$, these give eight values to each $a_3$, namely
+\begin{align*}
+	a_4 &= x_0 + x_8
+	= \octavec{disp(x_0)}+ \octavec{disp(x_8)} = \octavec{disp(mod(x_0+x_8,2))},\\
+	a_4 &= x_1 + x_9
+	= \octavec{disp(x_1)}+ \octavec{disp(x_9)} = \octavec{disp(mod(x_1+x_9,2))},\\
+	a_4 &= x_2 + x_{10}
+	= \octavec{disp(x_2)}+ \octavec{disp(x_10)} = \octavec{disp(mod(x_2+x_10,2))},\\
+	a_4 &= x_3 + x_{11}
+	= \octavec{disp(x_3)}+ \octavec{disp(x_11)} = \octavec{disp(mod(x_3+x_11,2))},\\
+	a_4 &= x_4 + x_{12}
+	= \octavec{disp(x_4)}+ \octavec{disp(x_12)} = \octavec{disp(mod(x_4+x_12,2))},\\
+	a_4 &= x_{5} + x_{13}
+	= \octavec{disp(x_5)}+ \octavec{disp(x_13)} = \octavec{disp(mod(x_5+x_13,2))},\\
+	a_4 &= x_{6} + x_{14}
+	= \octavec{disp(x_6)}+ \octavec{disp(x_14)} = \octavec{disp(mod(x_6+x_14,2))},\\
+	a_4 &= x_{7} + x_{15}
+	= \octavec{disp(x_7)}+ \octavec{disp(x_15)} = \octavec{disp(mod(x_7+x_15,2))}
+\end{align*}
+The majority vote is in favour of $1$ and therefore $a_4 = 1$.
+
+Now we have $\bm{a} = a_{0} 0 1 0 1$ where $a_0\in GF(2)$. Therefore, the original message transmitted was either $\bm{a} = 0 0 1 0 1$ or $\bm{a} = 1 0 1 0 1$. To determine which, assuming at most three errors in the received vector, we calculate $\bm{x} =\bm{a}G$ for each of the two possibilities for $\bm{a}$, where $G$ is the generator matrix given previously.  We then compare the two generated vectors of $\bm{x}$ with the received vector and the one that has three or less differences in the coordinate positions is the one transmitted. Thus,
+\begin{align*}
+	\bm{x}&=
+	\begin{pmatrix}[lrrrrr]
+	\octavec{disp(a_1)}
+	\end{pmatrix}
+	\begin{pmatrix}[lrrrrrrrrrrrrrrrr]
+     1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 \\
+     0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 \\
+     0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 \\
+     0 &0 &0 &0 &1 &1 &1 &1 &0 &0 &0 &0 &1 &1 &1 &1 \\
+     0 &0 &0 &0 &0 &0 &0 &0 &1 &1 &1 &1 &1 &1 &1 &1
+    \end{pmatrix}\\
+    &= \octavec{disp(xx_1)}.
+\end{align*}
+Comparing the vector generated above with the received vector:
+\begin{align*}
+	&\octavec{disp(xx_1)}\\
+	&\octavec{disp(x)}
+\end{align*}
+shows that they differ in more than three positions and as such the choice of $a_0=0$ was incorrect.
+\begin{align*}
+	\bm{x}&=
+	\begin{pmatrix}[lrrrrr]
+	\octavec{disp(a_2)}
+	\end{pmatrix}
+	\begin{pmatrix}[lrrrrrrrrrrrrrrrr]
+     1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 &1 \\
+     0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 &0 &1 \\
+     0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 &0 &0 &1 &1 \\
+     0 &0 &0 &0 &1 &1 &1 &1 &0 &0 &0 &0 &1 &1 &1 &1 \\
+     0 &0 &0 &0 &0 &0 &0 &0 &1 &1 &1 &1 &1 &1 &1 &1
+    \end{pmatrix}\\
+    &= \octavec{disp(xx_2)}.
+\end{align*}
+Comparing the vector generated above with the received vector:
+\begin{align*}
+	&\octavec{disp(xx_2)}\\
+	&\octavec{disp(x)}
+\end{align*}
+shows that they differ in three positions and as such the choice of $a_0=1$ was correct. Thus, the original message word was $\bm{a} = \octavec{disp(a(2,:))}$.
+
+\end{enumerate}

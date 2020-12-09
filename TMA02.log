@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.10)  25 NOV 2020 18:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.10)  9 DEC 2020 22:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,7 +933,11 @@ Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 \c@theorem=\count349
 \rowidth=\skip142
 )
-(./TMA02.aux (./q1.aux) (./q2.aux) (./q3.aux) (./q4.aux))
+(./TMA02.aux (./q1.aux) (./q2.aux) (./q3.aux
+
+LaTeX Warning: Label `eq:3.14' multiply defined.
+
+) (./q4.aux))
 \openout1 = `TMA02.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
@@ -951,8 +955,7 @@ LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 Package newfloat Info: `float' package detected.
-
-(./pythontex-files-TMA02/TMA02.pytxmcr)
+ (./pythontex-files-TMA02/TMA02.pytxmcr)
 Package newfloat Info: New float `listing' with options `fileext=lopytx' on inp
 ut line 11.
 \c@listing=\count350
@@ -1314,51 +1317,285 @@ Package marginnote Info: xpos seems to be 85.35826pt on input line 3.
 \openout2 = `q3.aux'.
 
  (./q3.tex
-(./q3a.tex) (./q3b.tex) (./q3c.tex)) [12
+(./q3a.tex) (./q3b.tex [12
 
 
 
-]
+]) (./q3c.tex
+Package marginnote Info: Margin note 13.1 is on absolute page 13 on input line 
+4.
+Package marginnote Info: right page because not two side mode on input line 4.
+Package marginnote Info: xpos seems to be 365.04904pt on input line 4.
+
+Overfull \hbox (23.14516pt too wide) detected at line 27
+\OML/cmm/b/it/12 x \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 :
+ []
+
+[13] [14]
+
+LaTeX Warning: Characters dropped after `\end{comment}' on input line 267.
+
+(./pythontex-files-TMA02/octave_default_0_169.stdout)
+(./pythontex-files-TMA02/octave_default_0_170.stdout)
+(./pythontex-files-TMA02/octave_default_0_171.stdout)
+(./pythontex-files-TMA02/octave_default_0_172.stdout)
+(./pythontex-files-TMA02/octave_default_0_173.stdout)
+(./pythontex-files-TMA02/octave_default_0_174.stdout)
+(./pythontex-files-TMA02/octave_default_0_175.stdout)
+(./pythontex-files-TMA02/octave_default_0_176.stdout)
+(./pythontex-files-TMA02/octave_default_0_177.stdout)
+(./pythontex-files-TMA02/octave_default_0_178.stdout)
+(./pythontex-files-TMA02/octave_default_0_179.stdout)
+(./pythontex-files-TMA02/octave_default_0_180.stdout)
+(./pythontex-files-TMA02/octave_default_0_181.stdout)
+(./pythontex-files-TMA02/octave_default_0_182.stdout)
+(./pythontex-files-TMA02/octave_default_0_183.stdout)
+(./pythontex-files-TMA02/octave_default_0_184.stdout)
+(./pythontex-files-TMA02/octave_default_0_185.stdout)
+(./pythontex-files-TMA02/octave_default_0_186.stdout)
+(./pythontex-files-TMA02/octave_default_0_187.stdout)
+(./pythontex-files-TMA02/octave_default_0_188.stdout)
+(./pythontex-files-TMA02/octave_default_0_189.stdout)
+(./pythontex-files-TMA02/octave_default_0_190.stdout)
+(./pythontex-files-TMA02/octave_default_0_191.stdout)
+(./pythontex-files-TMA02/octave_default_0_192.stdout)
+(./pythontex-files-TMA02/octave_default_0_169.stdout)
+(./pythontex-files-TMA02/octave_default_0_170.stdout)
+(./pythontex-files-TMA02/octave_default_0_171.stdout)
+(./pythontex-files-TMA02/octave_default_0_172.stdout)
+(./pythontex-files-TMA02/octave_default_0_173.stdout)
+(./pythontex-files-TMA02/octave_default_0_174.stdout)
+(./pythontex-files-TMA02/octave_default_0_175.stdout)
+(./pythontex-files-TMA02/octave_default_0_176.stdout)
+(./pythontex-files-TMA02/octave_default_0_177.stdout)
+(./pythontex-files-TMA02/octave_default_0_178.stdout)
+(./pythontex-files-TMA02/octave_default_0_179.stdout)
+(./pythontex-files-TMA02/octave_default_0_180.stdout)
+(./pythontex-files-TMA02/octave_default_0_181.stdout)
+(./pythontex-files-TMA02/octave_default_0_182.stdout)
+(./pythontex-files-TMA02/octave_default_0_183.stdout)
+(./pythontex-files-TMA02/octave_default_0_184.stdout)
+(./pythontex-files-TMA02/octave_default_0_185.stdout)
+(./pythontex-files-TMA02/octave_default_0_186.stdout)
+(./pythontex-files-TMA02/octave_default_0_187.stdout)
+(./pythontex-files-TMA02/octave_default_0_188.stdout)
+(./pythontex-files-TMA02/octave_default_0_189.stdout)
+(./pythontex-files-TMA02/octave_default_0_190.stdout)
+(./pythontex-files-TMA02/octave_default_0_191.stdout)
+(./pythontex-files-TMA02/octave_default_0_192.stdout) [15]
+(./pythontex-files-TMA02/octave_default_0_193.stdout)
+(./pythontex-files-TMA02/octave_default_0_194.stdout)
+(./pythontex-files-TMA02/octave_default_0_195.stdout)
+(./pythontex-files-TMA02/octave_default_0_196.stdout)
+(./pythontex-files-TMA02/octave_default_0_197.stdout)
+(./pythontex-files-TMA02/octave_default_0_198.stdout)
+(./pythontex-files-TMA02/octave_default_0_199.stdout)
+(./pythontex-files-TMA02/octave_default_0_200.stdout)
+(./pythontex-files-TMA02/octave_default_0_201.stdout)
+(./pythontex-files-TMA02/octave_default_0_202.stdout)
+(./pythontex-files-TMA02/octave_default_0_203.stdout)
+(./pythontex-files-TMA02/octave_default_0_204.stdout)
+(./pythontex-files-TMA02/octave_default_0_205.stdout)
+(./pythontex-files-TMA02/octave_default_0_206.stdout)
+(./pythontex-files-TMA02/octave_default_0_207.stdout)
+(./pythontex-files-TMA02/octave_default_0_208.stdout)
+(./pythontex-files-TMA02/octave_default_0_209.stdout)
+(./pythontex-files-TMA02/octave_default_0_210.stdout)
+(./pythontex-files-TMA02/octave_default_0_211.stdout)
+(./pythontex-files-TMA02/octave_default_0_212.stdout)
+(./pythontex-files-TMA02/octave_default_0_213.stdout)
+(./pythontex-files-TMA02/octave_default_0_214.stdout)
+(./pythontex-files-TMA02/octave_default_0_215.stdout)
+(./pythontex-files-TMA02/octave_default_0_216.stdout)
+(./pythontex-files-TMA02/octave_default_0_193.stdout)
+(./pythontex-files-TMA02/octave_default_0_194.stdout)
+(./pythontex-files-TMA02/octave_default_0_195.stdout)
+(./pythontex-files-TMA02/octave_default_0_196.stdout)
+(./pythontex-files-TMA02/octave_default_0_197.stdout)
+(./pythontex-files-TMA02/octave_default_0_198.stdout)
+(./pythontex-files-TMA02/octave_default_0_199.stdout)
+(./pythontex-files-TMA02/octave_default_0_200.stdout)
+(./pythontex-files-TMA02/octave_default_0_201.stdout)
+(./pythontex-files-TMA02/octave_default_0_202.stdout)
+(./pythontex-files-TMA02/octave_default_0_203.stdout)
+(./pythontex-files-TMA02/octave_default_0_204.stdout)
+(./pythontex-files-TMA02/octave_default_0_205.stdout)
+(./pythontex-files-TMA02/octave_default_0_206.stdout)
+(./pythontex-files-TMA02/octave_default_0_207.stdout)
+(./pythontex-files-TMA02/octave_default_0_208.stdout)
+(./pythontex-files-TMA02/octave_default_0_209.stdout)
+(./pythontex-files-TMA02/octave_default_0_210.stdout)
+(./pythontex-files-TMA02/octave_default_0_211.stdout)
+(./pythontex-files-TMA02/octave_default_0_212.stdout)
+(./pythontex-files-TMA02/octave_default_0_213.stdout)
+(./pythontex-files-TMA02/octave_default_0_214.stdout)
+(./pythontex-files-TMA02/octave_default_0_215.stdout)
+(./pythontex-files-TMA02/octave_default_0_216.stdout)
+(./pythontex-files-TMA02/octave_default_0_217.stdout)
+(./pythontex-files-TMA02/octave_default_0_218.stdout)
+(./pythontex-files-TMA02/octave_default_0_219.stdout)
+(./pythontex-files-TMA02/octave_default_0_220.stdout)
+(./pythontex-files-TMA02/octave_default_0_221.stdout)
+(./pythontex-files-TMA02/octave_default_0_222.stdout)
+(./pythontex-files-TMA02/octave_default_0_223.stdout)
+(./pythontex-files-TMA02/octave_default_0_224.stdout)
+(./pythontex-files-TMA02/octave_default_0_225.stdout)
+(./pythontex-files-TMA02/octave_default_0_226.stdout)
+(./pythontex-files-TMA02/octave_default_0_227.stdout)
+(./pythontex-files-TMA02/octave_default_0_228.stdout)
+(./pythontex-files-TMA02/octave_default_0_229.stdout)
+(./pythontex-files-TMA02/octave_default_0_230.stdout)
+(./pythontex-files-TMA02/octave_default_0_231.stdout)
+(./pythontex-files-TMA02/octave_default_0_232.stdout)
+(./pythontex-files-TMA02/octave_default_0_233.stdout)
+(./pythontex-files-TMA02/octave_default_0_234.stdout)
+(./pythontex-files-TMA02/octave_default_0_235.stdout)
+(./pythontex-files-TMA02/octave_default_0_236.stdout)
+(./pythontex-files-TMA02/octave_default_0_237.stdout)
+(./pythontex-files-TMA02/octave_default_0_238.stdout)
+(./pythontex-files-TMA02/octave_default_0_239.stdout)
+(./pythontex-files-TMA02/octave_default_0_240.stdout)
+(./pythontex-files-TMA02/octave_default_0_217.stdout)
+(./pythontex-files-TMA02/octave_default_0_218.stdout)
+(./pythontex-files-TMA02/octave_default_0_219.stdout)
+(./pythontex-files-TMA02/octave_default_0_220.stdout)
+(./pythontex-files-TMA02/octave_default_0_221.stdout)
+(./pythontex-files-TMA02/octave_default_0_222.stdout)
+(./pythontex-files-TMA02/octave_default_0_223.stdout)
+(./pythontex-files-TMA02/octave_default_0_224.stdout)
+(./pythontex-files-TMA02/octave_default_0_225.stdout)
+(./pythontex-files-TMA02/octave_default_0_226.stdout)
+(./pythontex-files-TMA02/octave_default_0_227.stdout)
+(./pythontex-files-TMA02/octave_default_0_228.stdout)
+(./pythontex-files-TMA02/octave_default_0_229.stdout)
+(./pythontex-files-TMA02/octave_default_0_230.stdout)
+(./pythontex-files-TMA02/octave_default_0_231.stdout)
+(./pythontex-files-TMA02/octave_default_0_232.stdout)
+(./pythontex-files-TMA02/octave_default_0_233.stdout)
+(./pythontex-files-TMA02/octave_default_0_234.stdout)
+(./pythontex-files-TMA02/octave_default_0_235.stdout)
+(./pythontex-files-TMA02/octave_default_0_236.stdout)
+(./pythontex-files-TMA02/octave_default_0_237.stdout)
+(./pythontex-files-TMA02/octave_default_0_238.stdout)
+(./pythontex-files-TMA02/octave_default_0_239.stdout)
+(./pythontex-files-TMA02/octave_default_0_240.stdout)
+(./pythontex-files-TMA02/octave_default_0_241.stdout)
+(./pythontex-files-TMA02/octave_default_0_242.stdout)
+(./pythontex-files-TMA02/octave_default_0_243.stdout)
+(./pythontex-files-TMA02/octave_default_0_244.stdout)
+(./pythontex-files-TMA02/octave_default_0_245.stdout)
+(./pythontex-files-TMA02/octave_default_0_246.stdout)
+(./pythontex-files-TMA02/octave_default_0_247.stdout)
+(./pythontex-files-TMA02/octave_default_0_248.stdout)
+(./pythontex-files-TMA02/octave_default_0_249.stdout)
+(./pythontex-files-TMA02/octave_default_0_250.stdout)
+(./pythontex-files-TMA02/octave_default_0_251.stdout)
+(./pythontex-files-TMA02/octave_default_0_252.stdout)
+(./pythontex-files-TMA02/octave_default_0_253.stdout)
+(./pythontex-files-TMA02/octave_default_0_254.stdout)
+(./pythontex-files-TMA02/octave_default_0_255.stdout)
+(./pythontex-files-TMA02/octave_default_0_256.stdout)
+(./pythontex-files-TMA02/octave_default_0_257.stdout)
+(./pythontex-files-TMA02/octave_default_0_258.stdout)
+(./pythontex-files-TMA02/octave_default_0_259.stdout)
+(./pythontex-files-TMA02/octave_default_0_260.stdout)
+(./pythontex-files-TMA02/octave_default_0_261.stdout)
+(./pythontex-files-TMA02/octave_default_0_262.stdout)
+(./pythontex-files-TMA02/octave_default_0_263.stdout)
+(./pythontex-files-TMA02/octave_default_0_264.stdout)
+(./pythontex-files-TMA02/octave_default_0_241.stdout)
+(./pythontex-files-TMA02/octave_default_0_242.stdout)
+(./pythontex-files-TMA02/octave_default_0_243.stdout)
+(./pythontex-files-TMA02/octave_default_0_244.stdout)
+(./pythontex-files-TMA02/octave_default_0_245.stdout)
+(./pythontex-files-TMA02/octave_default_0_246.stdout)
+(./pythontex-files-TMA02/octave_default_0_247.stdout)
+(./pythontex-files-TMA02/octave_default_0_248.stdout)
+(./pythontex-files-TMA02/octave_default_0_249.stdout)
+(./pythontex-files-TMA02/octave_default_0_250.stdout)
+(./pythontex-files-TMA02/octave_default_0_251.stdout)
+(./pythontex-files-TMA02/octave_default_0_252.stdout)
+(./pythontex-files-TMA02/octave_default_0_253.stdout)
+(./pythontex-files-TMA02/octave_default_0_254.stdout)
+(./pythontex-files-TMA02/octave_default_0_255.stdout)
+(./pythontex-files-TMA02/octave_default_0_256.stdout)
+(./pythontex-files-TMA02/octave_default_0_257.stdout)
+(./pythontex-files-TMA02/octave_default_0_258.stdout)
+(./pythontex-files-TMA02/octave_default_0_259.stdout)
+(./pythontex-files-TMA02/octave_default_0_260.stdout)
+(./pythontex-files-TMA02/octave_default_0_261.stdout)
+(./pythontex-files-TMA02/octave_default_0_262.stdout)
+(./pythontex-files-TMA02/octave_default_0_263.stdout)
+(./pythontex-files-TMA02/octave_default_0_264.stdout) [16]
+(./pythontex-files-TMA02/octave_default_0_265.stdout)
+(./pythontex-files-TMA02/octave_default_0_266.stdout)
+(./pythontex-files-TMA02/octave_default_0_265.stdout)
+(./pythontex-files-TMA02/octave_default_0_266.stdout)
+Overfull \hbox (22.0405pt too wide) detected at line 381
+[]
+ []
+
+(./pythontex-files-TMA02/octave_default_0_267.stdout)
+(./pythontex-files-TMA02/octave_default_0_268.stdout)
+(./pythontex-files-TMA02/octave_default_0_267.stdout)
+(./pythontex-files-TMA02/octave_default_0_268.stdout)
+(./pythontex-files-TMA02/octave_default_0_269.stdout)
+(./pythontex-files-TMA02/octave_default_0_270.stdout)
+(./pythontex-files-TMA02/octave_default_0_269.stdout)
+(./pythontex-files-TMA02/octave_default_0_270.stdout)
+Overfull \hbox (22.0405pt too wide) detected at line 401
+[]
+ []
+
+(./pythontex-files-TMA02/octave_default_0_271.stdout)
+(./pythontex-files-TMA02/octave_default_0_272.stdout)
+(./pythontex-files-TMA02/octave_default_0_271.stdout)
+(./pythontex-files-TMA02/octave_default_0_272.stdout)
+(./pythontex-files-TMA02/octave_default_0_273.stdout))) [17] [18]
 \openout2 = `q4.aux'.
 
- (./q4.tex (./q4a.tex) (./q4b.tex)
-(./q4c.tex)) [13
+ (./q4.tex
+(./q4a.tex) (./q4b.tex) (./q4c.tex)) [19
 
 
 
 ] 
 AED: lastpage setting LastPage
-(./TMA02.aux (./q1.aux) (./q2.aux) (./q3.aux) (./q4.aux)) ) 
+(./TMA02.aux (./q1.aux) (./q2.aux) (./q3.aux) (./q4.aux))
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
 Here is how much of TeX's memory you used:
- 22855 strings out of 479917
- 447082 string characters out of 5882705
- 803693 words of memory out of 5000000
- 38214 multiletter control sequences out of 15000+600000
- 552685 words of font info for 108 fonts, out of 8000000 for 9000
+ 23528 strings out of 479917
+ 475704 string characters out of 5882705
+ 812351 words of memory out of 5000000
+ 38339 multiletter control sequences out of 15000+600000
+ 553353 words of font info for 120 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 102i,24n,118p,689b,322s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/
-2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/local/texlive/20
-20/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/202
-0/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2020/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2020/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2020/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2020/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2020/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2020/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2020/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2020/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2020/texmf-dist/fo
-nts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020/texmf-dist/font
-s/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/
-type1/public/cm-super/sfrm1440.pfb>
-Output written on TMA02.pdf (13 pages, 176801 bytes).
+ 102i,24n,118p,689b,447s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2020/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
+</usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><
+/usr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
+sr/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/loc
+al/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texli
+ve/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texl
+ive/2020/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb></usr/local/texliv
+e/2020/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/
+2020/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/20
+20/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
+Output written on TMA02.pdf (19 pages, 221323 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 83 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 99 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11277 words of extra memory for PDF output out of 12000 (max. 10000000)
 

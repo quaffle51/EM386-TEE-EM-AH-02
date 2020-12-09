@@ -1,1 +1,49 @@
 % !TeX root = ./TMA02.tex
+
+\begin{table}[!htp]\centering
+\begin{tabular}{lrr|cr}\toprule
+$v_1$ &$v_2$ &$v_3$ &$f(v_.v_2.v_3)$ \\\midrule
+0 &0 &0 &0 \\
+1 &0 &0 &1 \\
+0 &1 &0 &1 \\
+1 &1 &0 &0 \\
+0 &0 &1 &1 \\
+1 &0 &1 &0 \\
+0 &1 &1 &1 \\
+1 &1 &1 &1 \\
+\bottomrule
+\end{tabular}
+\caption{Truth table for function $f:V(3,2) \rightarrow V(1,2)$.}\label{tab:4}
+\end{table}
+We obtain an expression for $f(v_.v_2.v_3)$ as a Boolean multinomial in three Boolean variables as follows.
+
+Making use of: $x\lor y = x + y +xy$; $x + x = 0$; $xx=x$; and $x + x=0$ in $GF(2)$, gives
+\begin{align*}
+f(v_.v_2.v_3) &= \bar{v_1}\bar{v_2}v_3\; \lor
+                 \bar{v_1}v_2\bar{v_3}\; \lor
+                 \bar{v_1}v_2v_3\; \lor
+                 v_1\bar{v_2}\bar{v_3} \lor
+                 v_1 v_2 v_3\\
+              &= \bar{v_1}v_3(v_2+\bar{v_2}) + 
+                 \bar{v_1}v_2(v_3+\bar{v_3}) +
+                 \bar{v_2}v_3(v_1+\bar{v_1}) +
+                 v_1\bar{v_2}\bar{v_3}\\
+              &= \bar{v_1}v_3 + 
+                 \bar{v_1}v_2 +
+                 \bar{v_2}v_3 +
+                 v_1\bar{v_2}\bar{v_3}\\
+              &= (1+v_1)v_3 + 
+                 (1+v_1)v_2 +
+                 (1+v_2)v_3 +
+                 v_1(1+v_2)(1+v_3)\\
+              &= v_3+v_1v_3 + 
+                 v_2+v_1v_2 +
+                 v_3 +v_2v_3+
+                 (v_1+v_1v_2)(1+v_3)\\
+             &= v_3+v_1v_3 + 
+                 v_2+v_1v_2 +
+                 v_3 +v_2v_3+
+                 v_1+v_1v_2 + v_1v_3+v_1v_2v_3\\
+             &= v_1 + v_2 + v_3 + v_2v_3 + v_1v_2v_3.                
+\end{align*}
+
