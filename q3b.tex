@@ -2,7 +2,7 @@
 
 \begin{table}[!htp]\centering
 \begin{tabular}{lrr|cr}\toprule
-$v_1$ &$v_2$ &$v_3$ &$f(v_.v_2.v_3)$ \\\midrule
+$v_1$ &$v_2$ &$v_3$ &$f(v_1, v_2, v_3)$ \\\midrule
 0 &0 &0 &0 \\
 1 &0 &0 &1 \\
 0 &1 &0 &1 \\
@@ -15,35 +15,49 @@ $v_1$ &$v_2$ &$v_3$ &$f(v_.v_2.v_3)$ \\\midrule
 \end{tabular}
 \caption{Truth table for function $f:V(3,2) \rightarrow V(1,2)$.}\label{tab:4}
 \end{table}
-We obtain an expression for $f(v_.v_2.v_3)$ as a Boolean multinomial in three Boolean variables as follows.
+We obtain an expression for $f(v_1, v_2, v_3)$ as a Boolean multinomial in three Boolean variables as follows.
 
 Making use of: $x\lor y = x + y +xy$; $x + x = 0$; $xx=x$; and $x + x=0$ in $GF(2)$, gives
-\begin{align*}
-f(v_.v_2.v_3) &= \bar{v_1}\bar{v_2}v_3\; \lor
-                 \bar{v_1}v_2\bar{v_3}\; \lor
-                 \bar{v_1}v_2v_3\; \lor
-                 v_1\bar{v_2}\bar{v_3} \lor
-                 v_1 v_2 v_3\\
-              &= \bar{v_1}v_3(v_2+\bar{v_2}) + 
-                 \bar{v_1}v_2(v_3+\bar{v_3}) +
-                 \bar{v_2}v_3(v_1+\bar{v_1}) +
-                 v_1\bar{v_2}\bar{v_3}\\
+\begin{align}
+f(v_1, v_2, v_3) &=      v_1  \bar{v_2} \bar{v_3}\; \lor
+                    \bar{v_1}      v_2  \bar{v_3}\; \lor
+                    \bar{v_1} \bar{v_2}      v_3 \; \lor
+                    \bar{v_1}      v_2       v_3 \; \lor
+                         v_1       v_2       v_3\nonumber\\
+              &= \bar{v_1}v_3(v_2 + \bar{v_2}) + 
+                 \bar{v_1}v_2(v_3 + \bar{v_3}) +
+                      v_2 v_3(v_1 + \bar{v_1}) + 
+                      v_1\bar{v_2}\bar{v_3}\nonumber \\
               &= \bar{v_1}v_3 + 
                  \bar{v_1}v_2 +
-                 \bar{v_2}v_3 +
-                 v_1\bar{v_2}\bar{v_3}\\
-              &= (1+v_1)v_3 + 
-                 (1+v_1)v_2 +
-                 (1+v_2)v_3 +
-                 v_1(1+v_2)(1+v_3)\\
-              &= v_3+v_1v_3 + 
-                 v_2+v_1v_2 +
-                 v_3 +v_2v_3+
-                 (v_1+v_1v_2)(1+v_3)\\
-             &= v_3+v_1v_3 + 
-                 v_2+v_1v_2 +
-                 v_3 +v_2v_3+
-                 v_1+v_1v_2 + v_1v_3+v_1v_2v_3\\
-             &= v_1 + v_2 + v_3 + v_2v_3 + v_1v_2v_3.                
-\end{align*}
+                      v_2 v_3 + 
+                      v_1\bar{v_2}\bar{v_3}\nonumber \\
+              &= (1 + v_1)v_3 + 
+                 (1 + v_1)v_2 +
+                      v_2 v_3 + 
+                      v_1(1 + v_2)(1 + v_3)\nonumber \\
+              &= v_3 + v_1v_3 + 
+                 v_2 + v_1v_2 +
+                      v_2 v_3 + 
+                      v_1 + v_1v_3 + v_1v_2 + v_1v_2v_3\nonumber\\
+\label{bool:1}             &= v_1 +v_2 + v_3 + v_2v_3 +v_1v_2v_3
+\end{align}
+Check:
+
+\begin{table}[!htp]\centering
+\begin{tabular}{lcc|c|c|cc}\toprule
+$v_1$ &$v_2$ &$v_3$ &$v_2v_3$ &$v_1v_2v_3$ &$v_1+v_2+v_3+v_2v_3+v_1v_2v_3$ \\\midrule
+0 &0 &0 &0 &0 &0 \\
+1 &0 &0 &0 &0 &1 \\
+0 &1 &0 &0 &0 &1 \\
+1 &1 &0 &0 &0 &0 \\
+0 &0 &1 &0 &0 &1 \\
+1 &0 &1 &0 &0 &0 \\
+0 &1 &1 &1 &0 &1 \\
+1 &1 &1 &1 &1 &1 \\
+\bottomrule
+\end{tabular}
+\caption{Truth Table for \eqref{bool:1}}\label{tab:5}
+\end{table}
+The last columns of Table~\ref{tab:5} and Table~\ref{tab:4} are in agreement. Thus, $f(v_1, v_2, v_3) = v_1+v_2+v_3+v_2v_3+v_1v_2v_3$.
 

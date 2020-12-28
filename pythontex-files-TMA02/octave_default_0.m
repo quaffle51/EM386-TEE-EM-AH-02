@@ -2295,7 +2295,7 @@ octavetex.command = 'code';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '168';
-octavetex.line = '129';
+octavetex.line = '131';
 
 octavetex.before()
 
@@ -2350,7 +2350,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '169';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2362,7 +2362,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '170';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2374,7 +2374,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '171';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2386,7 +2386,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '172';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2398,7 +2398,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '173';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2410,7 +2410,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '174';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2422,7 +2422,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '175';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2434,7 +2434,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '176';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2446,7 +2446,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '177';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2458,7 +2458,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '178';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2470,7 +2470,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '179';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2482,7 +2482,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '180';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2494,7 +2494,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '181';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2506,7 +2506,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '182';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2518,7 +2518,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '183';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2530,7 +2530,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '184';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2542,7 +2542,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '185';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2554,7 +2554,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '186';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2566,7 +2566,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '187';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2578,7 +2578,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '188';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2590,7 +2590,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '189';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2602,7 +2602,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '190';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2614,7 +2614,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '191';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2626,7 +2626,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '192';
-octavetex.line = '298';
+octavetex.line = '301';
 
 octavetex.before()
 
@@ -2638,7 +2638,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '193';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2650,7 +2650,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '194';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2662,7 +2662,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '195';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2674,7 +2674,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '196';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2686,7 +2686,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '197';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2698,7 +2698,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '198';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2710,7 +2710,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '199';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2722,7 +2722,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '200';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2734,7 +2734,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '201';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2746,7 +2746,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '202';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2758,7 +2758,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '203';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2770,7 +2770,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '204';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2782,7 +2782,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '205';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2794,7 +2794,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '206';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2806,7 +2806,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '207';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2818,7 +2818,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '208';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2830,7 +2830,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '209';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2842,7 +2842,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '210';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2854,7 +2854,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '211';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2866,7 +2866,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '212';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2878,7 +2878,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '213';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2890,7 +2890,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '214';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2902,7 +2902,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '215';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2914,7 +2914,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '216';
-octavetex.line = '321';
+octavetex.line = '324';
 
 octavetex.before()
 
@@ -2926,7 +2926,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '217';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -2938,7 +2938,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '218';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -2950,7 +2950,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '219';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -2962,7 +2962,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '220';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -2974,7 +2974,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '221';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -2986,7 +2986,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '222';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -2998,7 +2998,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '223';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3010,7 +3010,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '224';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3022,7 +3022,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '225';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3034,7 +3034,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '226';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3046,7 +3046,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '227';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3058,7 +3058,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '228';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3070,7 +3070,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '229';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3082,7 +3082,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '230';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3094,7 +3094,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '231';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3106,7 +3106,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '232';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3118,7 +3118,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '233';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3130,7 +3130,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '234';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3142,7 +3142,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '235';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3154,7 +3154,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '236';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3166,7 +3166,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '237';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3178,7 +3178,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '238';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3190,7 +3190,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '239';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3202,7 +3202,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '240';
-octavetex.line = '342';
+octavetex.line = '345';
 
 octavetex.before()
 
@@ -3214,7 +3214,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '241';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3226,7 +3226,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '242';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3238,7 +3238,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '243';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3250,7 +3250,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '244';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3262,7 +3262,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '245';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3274,7 +3274,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '246';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3286,7 +3286,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '247';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3298,7 +3298,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '248';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3310,7 +3310,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '249';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3322,7 +3322,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '250';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3334,7 +3334,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '251';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3346,7 +3346,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '252';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3358,7 +3358,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '253';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3370,7 +3370,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '254';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3382,7 +3382,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '255';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3394,7 +3394,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '256';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3406,7 +3406,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '257';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3418,7 +3418,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '258';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3430,7 +3430,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '259';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3442,7 +3442,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '260';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3454,7 +3454,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '261';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3466,7 +3466,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '262';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3478,7 +3478,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '263';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3490,7 +3490,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '264';
-octavetex.line = '363';
+octavetex.line = '366';
 
 octavetex.before()
 
@@ -3502,7 +3502,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '265';
-octavetex.line = '380';
+octavetex.line = '383';
 
 octavetex.before()
 
@@ -3514,7 +3514,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '266';
-octavetex.line = '380';
+octavetex.line = '383';
 
 octavetex.before()
 
@@ -3526,7 +3526,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '267';
-octavetex.line = '385';
+octavetex.line = '388';
 
 octavetex.before()
 
@@ -3538,7 +3538,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '268';
-octavetex.line = '385';
+octavetex.line = '388';
 
 octavetex.before()
 
@@ -3550,7 +3550,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '269';
-octavetex.line = '400';
+octavetex.line = '403';
 
 octavetex.before()
 
@@ -3562,7 +3562,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '270';
-octavetex.line = '400';
+octavetex.line = '403';
 
 octavetex.before()
 
@@ -3574,7 +3574,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '271';
-octavetex.line = '405';
+octavetex.line = '408';
 
 octavetex.before()
 
@@ -3586,7 +3586,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '272';
-octavetex.line = '405';
+octavetex.line = '408';
 
 octavetex.before()
 
@@ -3598,13 +3598,180 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '273';
-octavetex.line = '406';
+octavetex.line = '409';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#273#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#273#c#', "\n"));
 disp(a(2,:))
+octavetex.after()
+octavetex.command = 'code';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '274';
+octavetex.line = '10';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#274#code#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#274#code#', "\n"));
+function [C, w] = q4c_i
+ g = [1 0 0 1 0 0 1 0 0;0 1 0 0 1 0 0 1 0;0 0 1 0 0 1 0 0 1];
+ C = [];
+ for i = 0:1
+   for j = 0:1
+     for k = 0:1
+       m = [i j k];
+       C = [C; m*g];
+     endfor
+   endfor
+ endfor
+
+ w = 999;
+ for i = 1:size(C,1)
+   d = sum(C(i,:));
+   if  d != 0
+     if d < w
+       w = d;
+     endif
+   endif
+ endfor
+endfunction
+
+[C, w] = q4c_i;
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '275';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#275#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#275#c#', "\n"));
+disp(C(1,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '276';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#276#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#276#c#', "\n"));
+disp(C(2,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '277';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#277#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#277#c#', "\n"));
+disp(C(3,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '278';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#278#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#278#c#', "\n"));
+disp(C(4,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '279';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#279#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#279#c#', "\n"));
+disp(C(5,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '280';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#280#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#280#c#', "\n"));
+disp(C(6,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '281';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#281#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#281#c#', "\n"));
+disp(C(7,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '282';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#282#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#282#c#', "\n"));
+disp(C(8,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '283';
+octavetex.line = '45';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#283#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#283#c#', "\n"));
+disp(w)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '284';
+octavetex.line = '45';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#284#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#284#c#', "\n"));
+disp(w)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '285';
+octavetex.line = '51';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#285#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#285#c#', "\n"));
+disp(C(8,:))
 octavetex.after()
 
 

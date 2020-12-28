@@ -1,1 +1,142 @@
 % !TeX root = ./TMA02.tex
+\begin{enumerate}[label=(\roman*)]
+\item %(i)
+The generator matrix equivalent to the generator polynomial $g(x)=\sage{g3}$ is
+\[
+G = \sage{G3}.
+\]
+The generator polynomial has degree $r=6$ and the width of a codeword is $n=9$ and thus the dimension of the code is $k=3$. Therefore, we have a $[9,3]$-code and there are $q^k = 2^{3}=\sage{2**(9-6)}$ codewords. Thus, the eight message vectors are the 3-tuples of $V(3,2)$ and  multiplying each 3-tuple on the right by G gives the eight codewords \marginnote{\hill p55.}[-1cm] which are as follows.
+\begin{octavecode}
+function [C, w] = q4c_i
+ g = [1 0 0 1 0 0 1 0 0;0 1 0 0 1 0 0 1 0;0 0 1 0 0 1 0 0 1];
+ C = [];
+ for i = 0:1
+   for j = 0:1
+     for k = 0:1
+       m = [i j k];
+       C = [C; m*g];
+     endfor
+   endfor
+ endfor
+
+ w = 999;
+ for i = 1:size(C,1)
+   d = sum(C(i,:));
+   if  d != 0
+     if d < w
+       w = d;
+     endif
+   endif
+ endfor
+endfunction
+
+[C, w] = q4c_i;
+\end{octavecode}
+\begin{align*}
+	\octavec{disp(C(1,:))}\\
+	\octavec{disp(C(2,:))}\\
+	\octavec{disp(C(3,:))}\\
+	\octavec{disp(C(4,:))}\\
+	\octavec{disp(C(5,:))}\\
+	\octavec{disp(C(6,:))}\\
+	\octavec{disp(C(7,:))}\\
+	\octavec{disp(C(8,:))}\\
+\end{align*}
+These codewords, other than the zero codeword, have minimum weight $\octavec{disp(w)}$ and therefore the minimum distance is $\octavec{disp(w)}$.
+\item %(ii)
+A message $m(x) = m_0 + m_1x + m_2x^2$ is encoded as $c(x)=m(x)g(x)$. Thus, the codeword corresponding to the message $1+x+x^2$ is
+\[
+	c(x) = (1+x+x^2)(\sage{g3}) = \sage{(1+x+x^2)*g3}.
+\]
+Hence, the codeword corresponding to the message $m(x) = m_0 + m_1x + m_2x^2$ is  $\octavec{disp(C(8,:))}$.
+\item %(iii)
+Given a polynomial $p(x)$ of degree at most 8, the syndrome of $p(x)$ is defined to be $p(x)h(x)\Mod{x^9-1}$. Now, $x^n-1=g(x)h(x)$, so\marginnote{\hill p151.}[0cm]
+\[x^9 - 1 = (\sage{g3})h(x)\]
+and therefore, $h(x) =\sage{(x^9-1)/g3}$ over $GF(2)$. The polynomials of weight one  and degree at most eight are: $p(x) \in \{1,x,x^2,x^3,x^4,x^5,x^6,x^7,x^8\}$. Thus, the syndromes $p(x)h(x)\Mod{x^9-1}$ are as follows.
+
+\begin{align*}
+1\cdot(x^3+1)   &= \sage{x^0*(x^3+1)}, \\ 
+x\cdot(x^3+1)   &= \sage{x^1*(x^3+1)}, \\ 
+x^2\cdot(x^3+1) &= \sage{x^2*(x^3+1)}, \\ 
+x^3\cdot(x^3+1) &= \sage{x^3*(x^3+1)}, \\ 
+x^4\cdot(x^3+1) &= \sage{x^4*(x^3+1)}, \\ 
+x^5\cdot(x^3+1) &= \sage{x^5*(x^3+1)}, \\ 
+x^6\cdot(x^3+1) &= \sage{x^6*(x^3+1)} \equiv x^6 + 1\Mod{x^9-1},\\ 
+x^7\cdot(x^3+1) &= \sage{x^7*(x^3+1)} \equiv x^7 + x \Mod{x^9-1},\\ 
+x^8\cdot(x^3+1) &= \sage{x^8*(x^3+1)} \equiv x^8 + x^2 \Mod{x^9-1}.
+\end{align*}
+
+Hence, the \textbf{syndrome look-up table} \marginnote{\hill p75.} is as given in Table~\ref{tab:syndrom_lookup_table}.
+\begin{table}[!h]
+\centering
+\begin{tabular}{|c|c|}
+\hline 
+syndrome $\bm{z}$ & coset leader $f(\bm{z})$ \\ 
+\hline 
+$\sage{x^0*(x^3+1)}$ & 1 \\ 
+\hline 
+$\sage{x^1*(x^3+1)}$ & $x$ \\ 
+\hline 
+$\sage{x^2*(x^3+1)}$ & $x^2$ \\ 
+\hline 
+$\sage{x^3*(x^3+1)}$ & $x^3$ \\ 
+\hline 
+$\sage{x^4*(x^3+1)}$ & $x^4$  \\ 
+\hline 
+$\sage{x^5*(x^3+1)}$ & $x^5$  \\ 
+\hline 
+$x^6 + 1$ & $x^6$  \\ 
+\hline 
+$x^7 + x$ & $x^7$  \\ 
+\hline 
+$x^8 + x^2$ & $x^8$  \\ 
+\hline 
+\end{tabular}
+\caption{Syndrome look-up table.}
+\label{tab:syndrom_lookup_table}
+\end{table}
+\begin{sagesilent}
+R = PolynomialRing(GF(2),'x')
+x = R.gen()
+c = (1+x^2 + x^3 + x^5 + x^6 + x^8);
+g = (1+ x^3 + x^6);
+m = c/g;
+h = x^3 + 1
+s = (c*h)%(x^9 -1);
+
+\end{sagesilent}
+The received polynomial is $y(x) = 1 + x^2 + x^3 + x^4 + x^5 +x^6 + x^8$ and the calculated syndrome is 
+$y(x) h(x) \Mod{x^9 -1}$:
+\[
+	(1 + x^2 + x^3 + x^4 + x^5 +x^6 + x^8)(1+x^3)\equiv 
+	x^7 + x^4	
+	\Mod{x^9 -1}.
+\]
+As $x^7 + x^4$ does appear in the $\bm{z}$ column of Table~8 we decode as \[(1 + x^2 + x^3 + x^4 + x^5 +x^6 +x^8) - x^4\]
+to give the codeword:
+\[
+	c(x) = 1 + x^2 + x^3 + x^5 +x^6 + x^8.
+\]
+To original message polynomial is determined as follows:
+\[
+	m(x) = \frac{c(x)}{g(x)} = \frac{\sage{c}}{\sage{g}} = \sage{m}.
+\]
+Consequently, the original message polynomial was $\sage{m}$.
+
+Check:
+
+from \textbf{Theorem~12.14} if $c(x)$ is a codeword then $c(x)h(x)=0$:\marginnote{\hill p151.}[0cm]
+\[
+	c(x)h(x) = (\sage{c})(\sage{h}) \equiv \sage{s}\Mod{x^9 -1}.
+\]
+\end{enumerate}
+\rule{\textwidth}{2px}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\[
+	\polylongdiv{x^8+x^6+x^5+x^3+x^2+1}{x^6+x^3+1}
+\]
+
+
+
+
+

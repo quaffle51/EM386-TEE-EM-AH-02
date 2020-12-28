@@ -1,13 +1,13 @@
 % !TeX root = ./TMA02.tex
-Given that the code $C = H\ * S$ is formed using Plotkin's $(\bm{a}|\bm{a} + \bm{b})$ construction where $H =\textrm{Ham}(3,2)$ and $S =\textrm{Sim}(3,2)$ then length, dimension and minimum distance of $C$ is determined as follows.
+Given that the code $C = H\ *\ S$ is formed using Plotkin's $(\bm{a}|\bm{a} + \bm{b})$ construction where $H =\textrm{Ham}(3,2)$ and $S =\textrm{Sim}(3,2)$ then length, dimension and minimum distance of $C$ are determined as follows.
 
 From \hill page 82 \textbf{Theorem~8.2} a Ham(r,2) has length $n=2^r - 1 = 8-1=7$ and dimension $k = 2^r-1-r = 8-1-3=4$ and has minimum distance $3$. Thus, Ham(3,2) is a $[7, 4, 3]$-code.
 
-From Block~2 Course Notes page~7 \textbf{Definition~5.1} Sim(r, 2) is a $[(q^r-1)/(q-1),r,q^{r-1}]$-code i.e. a $[(2^4-1)/(2-1),3,2^{3-1}]$-code. Thus, Sim(3,2) is a 
+From Block~2 Course Notes page~7 \textbf{Definition~5.1} Sim(r, 2) is a $[(q^r-1)/(q-1),r,q^{r-1}]$-code i.e. a $[(2^3-1)/(2-1),3,2^{3-1}]$-code. Thus, Sim(3,2) is a 
 $[7,3,4]$-code.
 
 Now, from Block~2 Course Notes page~22 where it states that the code $C$, denoted by $A*B$, is formed from Construct~7.1 (Block~2 Course Notes page~21) then as the codes Ham(3,2) and Sim(3,2) are linear codes with dimensions $4$ and $3$ respectively (so that $M_{\textrm{Ham}}=2^4=16$ and $M_{\textrm{Sim}}=2^3=8$) then $C$ is linear and as $M_{\textrm{Ham}}M_{\textrm{Sim}}=2^{4+3}$ has dimension $k_C = k_{\textrm{Ham}} + k_{\textrm{Sim}} = 4 + 3 = 7$. The length of $C$ is $2n=14$ and the minimum distance is given by $d_C=\min\{2d_{\textrm{Ham}},d_{\textrm{Sim}}\}$ that is $d_C=\min\{2\cdot3,4\} = 4$. 
 
 Consequently, $C$ has parameters $(14, 16\cdot8, 4)=(14, 128, 4)$ and is a $[14,7,4]$-code. That is $C$ has length $14$, dimension $7$ and minimum distance $4$.
 
-************ more to be added ************
+To understand why in constructing a Slepian standard array for $C$, not all vectors of weight two can be coset leaders consider the case of a codeword of weight four such as $0   0   0   0   0   0   0   0   1   0   1   0   1   1$ and a coset leader of weight two such as $0   0   0   0   0   0   0   0   0   0   0   0   1   1$. Then, the addition of these two vectors to form a member of the Slepian standard array is $0   0   0   0   0   0   0   0   1   0   1   0   0   0$ which has weight two and is not a coset leader. Consequently, not all vectors of weight two can be coset leaders.

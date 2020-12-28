@@ -55,7 +55,7 @@ pytex.command = 'c'
 pytex.set_context('')
 pytex.args = ''
 pytex.instance = '1'
-pytex.line = '10'
+pytex.line = '18'
 
 print('=>PYTHONTEX:STDOUT#1#c#')
 sys.stderr.write('=>PYTHONTEX:STDERR#1#c#\n')
@@ -69,7 +69,7 @@ pytex.command = 'c'
 pytex.set_context('')
 pytex.args = ''
 pytex.instance = '2'
-pytex.line = '10'
+pytex.line = '18'
 
 print('=>PYTHONTEX:STDOUT#2#c#')
 sys.stderr.write('=>PYTHONTEX:STDERR#2#c#\n')
@@ -83,7 +83,7 @@ pytex.command = 'c'
 pytex.set_context('')
 pytex.args = ''
 pytex.instance = '3'
-pytex.line = '10'
+pytex.line = '18'
 
 print('=>PYTHONTEX:STDOUT#3#c#')
 sys.stderr.write('=>PYTHONTEX:STDERR#3#c#\n')
@@ -97,7 +97,7 @@ pytex.command = 'c'
 pytex.set_context('')
 pytex.args = ''
 pytex.instance = '4'
-pytex.line = '10'
+pytex.line = '18'
 
 print('=>PYTHONTEX:STDOUT#4#c#')
 sys.stderr.write('=>PYTHONTEX:STDERR#4#c#\n')
@@ -111,7 +111,7 @@ pytex.command = 'c'
 pytex.set_context('')
 pytex.args = ''
 pytex.instance = '5'
-pytex.line = '11'
+pytex.line = '20'
 
 print('=>PYTHONTEX:STDOUT#5#c#')
 sys.stderr.write('=>PYTHONTEX:STDERR#5#c#\n')

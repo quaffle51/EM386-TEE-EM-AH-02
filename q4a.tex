@@ -1,1 +1,81 @@
 % !TeX root = ./TMA02.tex
+To prove that, over $GF(2)$, $x^3-1 = (x-1)(x^2 + x +1)$ consider the following.
+
+Let $f(x) = x^3-1$, then  $f(1) = 0$ and so by \textbf{Lemma 12.3(i)}\marginnote{\hill p144.} $x^3-1$ has a linear factor $x-1$. Thus,
+\PolySet{p}{1,0,0,-1}
+\PolySet{q}{1,-1}\marginnote{Arithmetic is $\Mod{2}$.}[2cm]
+\[
+  \PolyLongDiv[base=2]{p}{q}
+\]
+\begin{comment}
+\[
+\polylongdiv[style=A]{x^3-1}{x-1},
+\]
+\end{comment}
+\begin{comment}
+\begingroup
+\begin{center}
+\renewcommand*{\arraystretch}{1.1}
+$\begin{array}{cccccc}
+& & &\quad x^2 & + x & +1\\
+\cline{3-6}
+\multicolumn{2}{r}{x - 1 |}
+&x^3&&&- 1\\
+&&x^3&-x^2&&\\
+\cline{3-4}
+&&& x^2&&\\
+&&& x^2&- x&\\
+\cline{4-5}
+&&&&x&-1\\
+&&&&x&-1\\
+\cline{5-6}
+&&&&&\;\;0
+\end{array}$
+\end{center}
+\endgroup
+\end{comment}
+and so $x^3-1 = (x-1)(x^2 + x + 1)$ and both polynomials in this multiplication are \textbf{monic}\marginnote{\hill p142.}. Now, let $q(x) = x^2 + x + 1$ then $q(0) = 1$ and $q(1) = 3 \equiv 1 \Mod{2}$ and therefore, from \textbf{Lemma 12.3(ii)}, $x^2 + x + 1$ is irreducible. Thus, $x^3-1 = (x-1)(x^2 + x +1)$ over $GF(2)$.
+\begin{sagesilent}
+	R = PolynomialRing(GF(2),'x');
+	x = R.gen();
+	p = x^6 + x^3 + 1;
+	q0 = x^2;
+	q1 = x + x^2;
+	q2 = 1 + x^2;
+	q3 = 1 + x + x^2;
+	Q0 = x^3;
+	Q1 = x^2 + x^3;
+	Q2 = x + x^3;
+	Q3 = x + x^2 + x^3;
+	Q4 = 1 + x^3;
+	Q5 = 1 + x^2 + x^3;
+	Q6 = 1 + x + x^3;
+	Q7 = 1 + x + x^2 + x^3;
+	a0 = p%q0;
+	a1 = p%q1;
+	a2 = p%q2;
+	a3 = p%q3;
+	A0 = p%Q0;
+	A1 = p%Q1;
+	A2 = p%Q2;
+	A3 = p%Q3;
+	A4 = p%Q4;
+	A5 = p%Q5;
+	A6 = p%Q6;
+	A7 = p%Q7;
+\end{sagesilent}
+Hence, we obtain the factorization of $x^9-1$ into irreducible polynomials over $GF(2)$ in the following way.\marginnote{\textbf{Lemma 12.3(iii)} \hill p144.}[0.9cm]
+\begin{align}
+	x^9-1 &= (x-1)(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 + x^2 + x + 1),\nonumber\\
+	&=(x-1)\left(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 \right) + (x-1)(x^2 + x + 1),\nonumber\\
+	&=(x-1)\left(x^8 + x^7 + x^6 + x^5 + x^4 + x^3 \right) + (x^3-1),\nonumber\\
+	&=x^3(x-1)\left(x^5 + x^4 + x^3 + x^2 + x + 1 \right) + (x^3-1),\nonumber\\
+	&=x^3(x-1)\left(x^5 + x^4 + x^3 \right) + x^3(x-1)(x^2 + x + 1) + (x^3-1),\nonumber\\
+	&=x^3(x-1)\left(x^5 + x^4 + x^3 \right) + x^3(x^3-1) + (x^3-1),\nonumber\\
+	&=x^6(x-1)\left(x^2 + x + 1 \right) + x^3(x^3-1) + (x^3-1),\nonumber\\
+	&=x^6(x^3-1) + x^3(x^3-1) + (x^3-1),\nonumber\\
+	&=(x^3-1)\left(x^6 + x^3 + 1\right),\nonumber\\
+	\label{eq:factorization}
+	&=(x-1)(x^2 + x + 1)(x^6 + x^3 + 1).
+\end{align}
+

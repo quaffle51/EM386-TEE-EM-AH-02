@@ -550,5 +550,28 @@ v =
    1   1   0   0   1   1   1   1   0   0   1   1   1   0   1   1
 =>PYTHONTEX:STDOUT#273#c#
    1   0   1   0   1
+=>PYTHONTEX:STDOUT#274#code#
+=>PYTHONTEX:STDOUT#275#c#
+   0   0   0   0   0   0   0   0   0
+=>PYTHONTEX:STDOUT#276#c#
+   0   0   1   0   0   1   0   0   1
+=>PYTHONTEX:STDOUT#277#c#
+   0   1   0   0   1   0   0   1   0
+=>PYTHONTEX:STDOUT#278#c#
+   0   1   1   0   1   1   0   1   1
+=>PYTHONTEX:STDOUT#279#c#
+   1   0   0   1   0   0   1   0   0
+=>PYTHONTEX:STDOUT#280#c#
+   1   0   1   1   0   1   1   0   1
+=>PYTHONTEX:STDOUT#281#c#
+   1   1   0   1   1   0   1   1   0
+=>PYTHONTEX:STDOUT#282#c#
+   1   1   1   1   1   1   1   1   1
+=>PYTHONTEX:STDOUT#283#c#
+ 3
+=>PYTHONTEX:STDOUT#284#c#
+ 3
+=>PYTHONTEX:STDOUT#285#c#
+   1   1   1   1   1   1   1   1   1
 =>PYTHONTEX:DEPENDENCIES#
 =>PYTHONTEX:CREATED#

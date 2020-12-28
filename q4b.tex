@@ -1,1 +1,141 @@
-% !TeX root = ./TMA02.tex
+% !TeX root = ./TMA02.tex%
+\begin{enumerate}[label=(\roman*)]%
+\item%(i)
+All cyclic codes of length 9 over $GF(2)$ can be determined by specifying their generator polynomials and equivalent generator matrices as follows.
+
+From \eqref{eq:factorization} we see that there are $2^3 = 8$ divisors of $\polynomial[reciprocal]{1,0,0,0,0,0,0,0,0,1}$ in $F_2[x]$, each of which generates a cyclic code. The eight generator polynomials and the equivalent generator matrices, given by \textbf{Theorem~12.12},\marginnote{\hill p149.}[0cm] are as shown in Table~\ref{table:gen_mats}.
+
+
+\begin{sagesilent}
+var('x');
+F.<x> = GF(2)[];
+g_poly = [x**0, 
+	     x-1,
+	     x**2 + x + 1, 
+	     x**6 + x**3 + 1,
+	     x**3 + 1,
+	     x**7 - x**6 + x**4 - x**3 + x - 1,
+	     x**8 + x**7 + x**6 + x**5 + x**4 - x**3 + x**2 + x + 1,
+	     x**9 - 1];
+     
+
+n = 9;
+
+g0 = x**0;
+C = codes.CyclicCode(generator_pol = g0, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h0 = C.check_polynomial();
+#p0 = C.parity_check_matrix();
+p0 = zero_matrix(1, 9);
+G0 = E.generator_matrix();
+
+g1 = x - 1;
+C = codes.CyclicCode(generator_pol = g1, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h1 = C.check_polynomial();
+p1 = C.parity_check_matrix();
+G1 = E.generator_matrix();
+
+g2 = x**2 + x + 1;
+C = codes.CyclicCode(generator_pol = g2, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h2 = C.check_polynomial();
+p2 = C.parity_check_matrix();
+G2 = E.generator_matrix();
+
+g3 = x**6 + x**3 + 1;
+C = codes.CyclicCode(generator_pol = g3, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h3 = C.check_polynomial();
+p3 = C.parity_check_matrix();
+G3 = E.generator_matrix();
+
+g4 = x**3 + 1;
+C = codes.CyclicCode(generator_pol = g4, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h4 = C.check_polynomial();
+p4 = C.parity_check_matrix();
+G4 = E.generator_matrix();
+
+g5 = x**7 - x**6 + x**4 - x**3 + x - 1;
+C = codes.CyclicCode(generator_pol = g5, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h5 = C.check_polynomial();
+p5 = C.parity_check_matrix();
+G5 = E.generator_matrix();
+
+g6 = x**8 + x**7 + x**6 + x**5 + x**4 - x**3 + x**2 + x + 1;
+C = codes.CyclicCode(generator_pol = g6, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h6 = C.check_polynomial();
+p6 = C.parity_check_matrix();
+G6 = E.generator_matrix();
+
+g7 = x**9 - 1;
+C = codes.CyclicCode(generator_pol = g7, length = n);
+E = codes.encoders.CyclicCodeVectorEncoder(C);
+h7 = C.check_polynomial();
+p7 = C.parity_check_matrix();
+# G7 = E.generator_matrix();
+G7 = zero_matrix(1, 9);
+\end{sagesilent}
+
+\begin{table}
+{\tabulinesep=1.2mm
+   \begin{tabu} {|l|l|}\hline
+	\textbf{generator polynomial} & \textbf{generator matrix}\\ 
+	\hline
+	$\sage{g0}$ & $\sage{G0}$\\
+	\hline
+	$\sage{g1}$ & $\sage{G1}$ \\
+	\hline
+	$\sage{g2}$ & $\sage{G2}$ \\
+	\hline
+	$\sage{g3}$ & $\sage{G3}$ \\
+	\hline
+	$\sage{g4}$ & $\sage{G4}$ \\
+	\hline
+	$\sage{g5}$ & $\sage{G5}$ \\
+	\hline
+	$\sage{g6}$ & $\sage{G6}$ \\
+	\hline
+	$\sage{g7}$ & $\sage{G7}$ \\
+	\hline
+   \end{tabu}
+ }
+ \caption{Generator polynomials and their equivalent generator matrices.}
+ \label{table:gen_mats}
+\end{table}
+\item %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+For each of the cyclic codes of length 9 over $GF(2)$ a check polynomial and an equivalent parity-check matrix, given by \textbf{Theorem~12.15},\marginnote{\hill p152.}[0cm] is given as shown in Table~\ref{table:check_mats}.
+\begin{table}
+{\tabulinesep=1.2mm
+   \begin{tabu} {|l|l|}\hline
+	\textbf{check polynomial} & \textbf{parity-check matrix}\\ 
+	\hline
+	$\sage{h0}$ & $\sage{p0}$  \\
+	\hline
+	$\sage{h1}$ & $\sage{p1}$ \\
+	\hline
+	$\sage{h2}$ & $\sage{p2}$ \\
+	\hline
+	$\sage{h3}$ & $\sage{p3}$ \\
+	\hline
+	$\sage{h4}$ & $\sage{p4}$ \\
+	\hline
+	$\sage{h5}$ & $\sage{p5}$ \\
+	\hline
+	$\sage{h6}$ & $\sage{p6}$ \\
+	\hline
+	$\sage{h7}$ & $\sage{p7}$ \\
+	\hline
+   \end{tabu}
+ }
+ \caption{Check polynomials and their equivalent parity-check matrices.}
+ \label{table:check_mats}
+\end{table}
+
+\end{enumerate}
+
+
+
