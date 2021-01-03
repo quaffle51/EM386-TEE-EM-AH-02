@@ -179,7 +179,7 @@ octavetex.command = 'i';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '2';
-octavetex.line = '65';
+octavetex.line = '66';
 
 octavetex.before()
 
@@ -191,7 +191,7 @@ octavetex.command = 'i';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '3';
-octavetex.line = '65';
+octavetex.line = '66';
 
 octavetex.before()
 
@@ -203,7 +203,7 @@ octavetex.command = 'i';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '4';
-octavetex.line = '65';
+octavetex.line = '66';
 
 octavetex.before()
 
@@ -215,7 +215,7 @@ octavetex.command = 'i';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '5';
-octavetex.line = '65';
+octavetex.line = '67';
 
 octavetex.before()
 
@@ -227,7 +227,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '6';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -239,31 +239,31 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '7';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#7#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#7#c#', "\n"));
-disp(s2)
+disp(y2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '8';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#8#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#8#c#', "\n"));
-disp(mod(s2*3,7))
+disp(mod(y2*3*H',7))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '9';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -275,7 +275,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '10';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -287,7 +287,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '11';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -299,7 +299,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '12';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -311,7 +311,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '13';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -323,7 +323,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '14';
-octavetex.line = '65';
+octavetex.line = '68';
 
 octavetex.before()
 
@@ -335,7 +335,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '15';
-octavetex.line = '69';
+octavetex.line = '72';
 
 octavetex.before()
 
@@ -347,7 +347,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '16';
-octavetex.line = '69';
+octavetex.line = '72';
 
 octavetex.before()
 
@@ -359,7 +359,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '17';
-octavetex.line = '70';
+octavetex.line = '73';
 
 octavetex.before()
 
@@ -371,7 +371,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '18';
-octavetex.line = '70';
+octavetex.line = '73';
 
 octavetex.before()
 
@@ -383,7 +383,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '19';
-octavetex.line = '71';
+octavetex.line = '74';
 
 octavetex.before()
 
@@ -395,7 +395,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '20';
-octavetex.line = '71';
+octavetex.line = '74';
 
 octavetex.before()
 
@@ -407,7 +407,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '21';
-octavetex.line = '72';
+octavetex.line = '75';
 
 octavetex.before()
 
@@ -419,7 +419,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '22';
-octavetex.line = '72';
+octavetex.line = '75';
 
 octavetex.before()
 
@@ -431,7 +431,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '23';
-octavetex.line = '73';
+octavetex.line = '76';
 
 octavetex.before()
 
@@ -443,7 +443,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '24';
-octavetex.line = '73';
+octavetex.line = '76';
 
 octavetex.before()
 
@@ -455,7 +455,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '25';
-octavetex.line = '74';
+octavetex.line = '77';
 
 octavetex.before()
 
@@ -467,7 +467,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '26';
-octavetex.line = '74';
+octavetex.line = '77';
 
 octavetex.before()
 
@@ -479,7 +479,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '27';
-octavetex.line = '75';
+octavetex.line = '78';
 
 octavetex.before()
 
@@ -491,7 +491,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '28';
-octavetex.line = '75';
+octavetex.line = '78';
 
 octavetex.before()
 
@@ -503,7 +503,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '29';
-octavetex.line = '76';
+octavetex.line = '79';
 
 octavetex.before()
 
@@ -515,7 +515,7 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '30';
-octavetex.line = '76';
+octavetex.line = '79';
 
 octavetex.before()
 
@@ -1403,300 +1403,252 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '94';
-octavetex.line = '46';
+octavetex.line = '56';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#94#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#94#c#', "\n"));
-disp(y(1,1))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '95';
-octavetex.line = '46';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#95#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#95#c#', "\n"));
-disp(y(1,2))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '96';
-octavetex.line = '46';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#96#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#96#c#', "\n"));
-disp(y(1,1))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '97';
-octavetex.line = '46';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#97#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#97#c#', "\n"));
-disp(y(1,2))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '98';
-octavetex.line = '56';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#98#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#98#c#', "\n"));
 disp(a11)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '99';
+octavetex.instance = '95';
 octavetex.line = '57';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#99#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#99#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#95#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#95#c#', "\n"));
 disp(a12)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '100';
+octavetex.instance = '96';
 octavetex.line = '58';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#100#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#100#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#96#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#96#c#', "\n"));
 disp(a13)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '101';
+octavetex.instance = '97';
 octavetex.line = '59';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#101#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#101#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#97#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#97#c#', "\n"));
 disp(a14)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '102';
+octavetex.instance = '98';
 octavetex.line = '60';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#102#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#102#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#98#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#98#c#', "\n"));
 disp(a21)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '103';
+octavetex.instance = '99';
 octavetex.line = '61';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#103#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#103#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#99#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#99#c#', "\n"));
 disp(a22)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '104';
+octavetex.instance = '100';
 octavetex.line = '62';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#104#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#104#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#100#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#100#c#', "\n"));
 disp(a23)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '105';
+octavetex.instance = '101';
 octavetex.line = '63';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#105#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#105#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#101#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#101#c#', "\n"));
 disp(a24)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '106';
+octavetex.instance = '102';
 octavetex.line = '67';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#106#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#106#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#102#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#102#c#', "\n"));
 disp(G(1,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '107';
+octavetex.instance = '103';
 octavetex.line = '68';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#107#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#107#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#103#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#103#c#', "\n"));
 disp(G(1,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '108';
+octavetex.instance = '104';
 octavetex.line = '69';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#108#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#108#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#104#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#104#c#', "\n"));
 disp(G(1,3))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '109';
+octavetex.instance = '105';
 octavetex.line = '70';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#109#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#109#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#105#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#105#c#', "\n"));
 disp(G(1,4))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '110';
+octavetex.instance = '106';
 octavetex.line = '71';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#110#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#110#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#106#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#106#c#', "\n"));
 disp(G(1,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '111';
+octavetex.instance = '107';
 octavetex.line = '72';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#111#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#111#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#107#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#107#c#', "\n"));
 disp(G(1,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '112';
+octavetex.instance = '108';
 octavetex.line = '73';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#112#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#112#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#108#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#108#c#', "\n"));
 disp(G(2,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '113';
+octavetex.instance = '109';
 octavetex.line = '74';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#113#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#113#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#109#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#109#c#', "\n"));
 disp(G(2,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '114';
+octavetex.instance = '110';
 octavetex.line = '75';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#114#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#114#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#110#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#110#c#', "\n"));
 disp(G(2,3))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '115';
+octavetex.instance = '111';
 octavetex.line = '76';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#115#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#115#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#111#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#111#c#', "\n"));
 disp(G(2,4))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '116';
+octavetex.instance = '112';
 octavetex.line = '77';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#116#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#116#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#112#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#112#c#', "\n"));
 disp(G(2,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '117';
+octavetex.instance = '113';
 octavetex.line = '78';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#117#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#117#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#113#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#113#c#', "\n"));
 disp(G(2,6))
 octavetex.after()
 octavetex.command = 'code';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '118';
+octavetex.instance = '114';
 octavetex.line = '3';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#118#code#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#118#code#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#114#code#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#114#code#', "\n"));
 	v1 = [3 2 4 1 3 0];
 	c1 = mod([v1(1,1) v1(1,2)]*G, q);
 	v2 = [4 5 2 0 6 6];
@@ -1706,601 +1658,601 @@ octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '119';
+octavetex.instance = '115';
 octavetex.line = '9';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#119#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#119#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#115#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#115#c#', "\n"));
 disp(v1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '120';
+octavetex.instance = '116';
 octavetex.line = '11';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#120#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#120#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#116#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#116#c#', "\n"));
 disp(v1(1,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '121';
+octavetex.instance = '117';
 octavetex.line = '11';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#121#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#121#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#117#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#117#c#', "\n"));
 disp(v1(1,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '122';
+octavetex.instance = '118';
 octavetex.line = '13';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#118#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#118#c#', "\n"));
+disp(G(1,1))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '119';
+octavetex.line = '14';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#119#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#119#c#', "\n"));
+disp(G(1,2))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '120';
+octavetex.line = '15';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#120#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#120#c#', "\n"));
+disp(G(1,3))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '121';
+octavetex.line = '16';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#121#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#121#c#', "\n"));
+disp(G(1,4))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '122';
+octavetex.line = '17';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#122#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#122#c#', "\n"));
-disp(G(1,1))
+disp(G(1,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '123';
-octavetex.line = '14';
+octavetex.line = '18';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#123#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#123#c#', "\n"));
-disp(G(1,2))
+disp(G(1,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '124';
-octavetex.line = '15';
+octavetex.line = '19';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#124#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#124#c#', "\n"));
-disp(G(1,3))
+disp(G(2,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '125';
-octavetex.line = '16';
+octavetex.line = '20';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#125#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#125#c#', "\n"));
-disp(G(1,4))
+disp(G(2,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '126';
-octavetex.line = '17';
+octavetex.line = '21';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#126#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#126#c#', "\n"));
-disp(G(1,5))
+disp(G(2,3))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '127';
-octavetex.line = '18';
+octavetex.line = '22';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#127#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#127#c#', "\n"));
-disp(G(1,6))
+disp(G(2,4))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '128';
-octavetex.line = '19';
+octavetex.line = '23';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#128#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#128#c#', "\n"));
-disp(G(2,1))
+disp(G(2,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '129';
-octavetex.line = '20';
+octavetex.line = '24';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#129#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#129#c#', "\n"));
-disp(G(2,2))
+disp(G(2,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '130';
-octavetex.line = '21';
+octavetex.line = '26';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#130#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#130#c#', "\n"));
-disp(G(2,3))
+disp(c1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '131';
-octavetex.line = '22';
+octavetex.line = '28';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#131#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#131#c#', "\n"));
-disp(G(2,4))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '132';
-octavetex.line = '23';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#132#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#132#c#', "\n"));
-disp(G(2,5))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '133';
-octavetex.line = '24';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#133#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#133#c#', "\n"));
-disp(G(2,6))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '134';
-octavetex.line = '26';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#134#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#134#c#', "\n"));
-disp(c1)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '135';
-octavetex.line = '28';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#135#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#135#c#', "\n"));
 disp(v1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '136';
+octavetex.instance = '132';
 octavetex.line = '28';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#136#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#136#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#132#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#132#c#', "\n"));
 disp(c1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '137';
+octavetex.instance = '133';
 octavetex.line = '30';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#137#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#137#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#133#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#133#c#', "\n"));
 disp(v2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '138';
+octavetex.instance = '134';
 octavetex.line = '32';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#138#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#138#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#134#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#134#c#', "\n"));
 disp(v2(1,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '139';
+octavetex.instance = '135';
 octavetex.line = '32';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#139#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#139#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#135#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#135#c#', "\n"));
 disp(v2(1,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '140';
+octavetex.instance = '136';
 octavetex.line = '34';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#136#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#136#c#', "\n"));
+disp(G(1,1))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '137';
+octavetex.line = '35';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#137#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#137#c#', "\n"));
+disp(G(1,2))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '138';
+octavetex.line = '36';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#138#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#138#c#', "\n"));
+disp(G(1,3))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '139';
+octavetex.line = '37';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#139#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#139#c#', "\n"));
+disp(G(1,4))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '140';
+octavetex.line = '38';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#140#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#140#c#', "\n"));
-disp(G(1,1))
+disp(G(1,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '141';
-octavetex.line = '35';
+octavetex.line = '39';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#141#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#141#c#', "\n"));
-disp(G(1,2))
+disp(G(1,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '142';
-octavetex.line = '36';
+octavetex.line = '40';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#142#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#142#c#', "\n"));
-disp(G(1,3))
+disp(G(2,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '143';
-octavetex.line = '37';
+octavetex.line = '41';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#143#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#143#c#', "\n"));
-disp(G(1,4))
+disp(G(2,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '144';
-octavetex.line = '38';
+octavetex.line = '42';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#144#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#144#c#', "\n"));
-disp(G(1,5))
+disp(G(2,3))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '145';
-octavetex.line = '39';
+octavetex.line = '43';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#145#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#145#c#', "\n"));
-disp(G(1,6))
+disp(G(2,4))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '146';
-octavetex.line = '40';
+octavetex.line = '44';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#146#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#146#c#', "\n"));
-disp(G(2,1))
+disp(G(2,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '147';
-octavetex.line = '41';
+octavetex.line = '45';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#147#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#147#c#', "\n"));
-disp(G(2,2))
+disp(G(2,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '148';
-octavetex.line = '42';
+octavetex.line = '47';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#148#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#148#c#', "\n"));
-disp(G(2,3))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '149';
-octavetex.line = '43';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#149#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#149#c#', "\n"));
-disp(G(2,4))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '150';
-octavetex.line = '44';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#150#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#150#c#', "\n"));
-disp(G(2,5))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '151';
-octavetex.line = '45';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#151#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#151#c#', "\n"));
-disp(G(2,6))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '152';
-octavetex.line = '47';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#152#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#152#c#', "\n"));
 disp(c2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '153';
+octavetex.instance = '149';
 octavetex.line = '49';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#153#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#153#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#149#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#149#c#', "\n"));
 disp(v2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '154';
+octavetex.instance = '150';
 octavetex.line = '53';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#154#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#154#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#150#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#150#c#', "\n"));
 disp(G(1,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '155';
+octavetex.instance = '151';
 octavetex.line = '54';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#155#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#155#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#151#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#151#c#', "\n"));
 disp(G(1,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '156';
+octavetex.instance = '152';
 octavetex.line = '55';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#156#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#156#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#152#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#152#c#', "\n"));
 disp(G(1,3))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '157';
+octavetex.instance = '153';
 octavetex.line = '56';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#157#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#157#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#153#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#153#c#', "\n"));
 disp(G(1,4))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '158';
+octavetex.instance = '154';
 octavetex.line = '57';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#158#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#158#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#154#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#154#c#', "\n"));
 disp(G(1,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '159';
+octavetex.instance = '155';
 octavetex.line = '58';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#159#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#159#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#155#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#155#c#', "\n"));
 disp(G(1,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '160';
+octavetex.instance = '156';
 octavetex.line = '59';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#160#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#160#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#156#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#156#c#', "\n"));
 disp(G(2,1))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '161';
+octavetex.instance = '157';
 octavetex.line = '60';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#161#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#161#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#157#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#157#c#', "\n"));
 disp(G(2,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '162';
+octavetex.instance = '158';
 octavetex.line = '61';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#162#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#162#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#158#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#158#c#', "\n"));
 disp(G(2,3))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '163';
+octavetex.instance = '159';
 octavetex.line = '62';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#163#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#163#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#159#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#159#c#', "\n"));
 disp(G(2,4))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '164';
+octavetex.instance = '160';
 octavetex.line = '63';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#164#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#164#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#160#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#160#c#', "\n"));
 disp(G(2,5))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '165';
+octavetex.instance = '161';
 octavetex.line = '64';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#165#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#165#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#161#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#161#c#', "\n"));
 disp(G(2,6))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '166';
+octavetex.instance = '162';
 octavetex.line = '66';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#166#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#166#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#162#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#162#c#', "\n"));
 disp(c3)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '167';
+octavetex.instance = '163';
 octavetex.line = '68';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#167#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#167#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#163#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#163#c#', "\n"));
 disp(c3)
 octavetex.after()
 octavetex.command = 'code';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '168';
+octavetex.instance = '164';
 octavetex.line = '131';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#168#code#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#168#code#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#164#code#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#164#code#', "\n"));
 	x = [1 1 0 0 1 1 1 1 0 0 1 1 1 0 1 1];
 	x_0 = x(1,1);
 	x_1 = x(1,2);
@@ -2349,6 +2301,54 @@ octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
+octavetex.instance = '165';
+octavetex.line = '301';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#165#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#165#c#', "\n"));
+disp(x_0)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '166';
+octavetex.line = '301';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#166#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#166#c#', "\n"));
+disp(x_1)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '167';
+octavetex.line = '301';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#167#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#167#c#', "\n"));
+disp(mod(x_0+x_1,2))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '168';
+octavetex.line = '301';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#168#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#168#c#', "\n"));
+disp(x_2)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
 octavetex.instance = '169';
 octavetex.line = '301';
 
@@ -2356,7 +2356,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#169#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#169#c#', "\n"));
-disp(x_0)
+disp(x_3)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2368,7 +2368,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#170#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#170#c#', "\n"));
-disp(x_1)
+disp(mod(x_2+x_3,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2380,7 +2380,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#171#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#171#c#', "\n"));
-disp(mod(x_0+x_1,2))
+disp(x_4)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2392,7 +2392,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#172#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#172#c#', "\n"));
-disp(x_2)
+disp(x_5)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2404,7 +2404,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#173#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#173#c#', "\n"));
-disp(x_3)
+disp(mod(x_4+x_5,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2416,7 +2416,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#174#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#174#c#', "\n"));
-disp(mod(x_2+x_3,2))
+disp(x_6)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2428,7 +2428,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#175#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#175#c#', "\n"));
-disp(x_4)
+disp(x_7)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2440,7 +2440,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#176#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#176#c#', "\n"));
-disp(x_5)
+disp(mod(x_6+x_7,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2452,7 +2452,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#177#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#177#c#', "\n"));
-disp(mod(x_4+x_5,2))
+disp(x_8)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2464,7 +2464,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#178#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#178#c#', "\n"));
-disp(x_6)
+disp(x_9)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2476,7 +2476,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#179#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#179#c#', "\n"));
-disp(x_7)
+disp(mod(x_8+x_9,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2488,7 +2488,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#180#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#180#c#', "\n"));
-disp(mod(x_6+x_7,2))
+disp(x_10)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2500,7 +2500,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#181#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#181#c#', "\n"));
-disp(x_8)
+disp(x_11)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2512,7 +2512,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#182#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#182#c#', "\n"));
-disp(x_9)
+disp(mod(x_10+x_11,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2524,7 +2524,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#183#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#183#c#', "\n"));
-disp(mod(x_8+x_9,2))
+disp(x_12)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2536,7 +2536,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#184#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#184#c#', "\n"));
-disp(x_10)
+disp(x_13)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2548,7 +2548,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#185#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#185#c#', "\n"));
-disp(x_11)
+disp(mod(x_12+x_13,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2560,7 +2560,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#186#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#186#c#', "\n"));
-disp(mod(x_10+x_11,2))
+disp(x_14)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2572,7 +2572,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#187#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#187#c#', "\n"));
-disp(x_12)
+disp(x_15)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2584,55 +2584,55 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#188#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#188#c#', "\n"));
-disp(x_13)
+disp(mod(x_14+x_15,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '189';
-octavetex.line = '301';
+octavetex.line = '324';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#189#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#189#c#', "\n"));
-disp(mod(x_12+x_13,2))
+disp(x_0)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '190';
-octavetex.line = '301';
+octavetex.line = '324';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#190#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#190#c#', "\n"));
-disp(x_14)
+disp(x_2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '191';
-octavetex.line = '301';
+octavetex.line = '324';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#191#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#191#c#', "\n"));
-disp(x_15)
+disp(mod(x_0+x_2,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '192';
-octavetex.line = '301';
+octavetex.line = '324';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#192#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#192#c#', "\n"));
-disp(mod(x_14+x_15,2))
+disp(x_1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2644,7 +2644,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#193#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#193#c#', "\n"));
-disp(x_0)
+disp(x_3)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2656,7 +2656,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#194#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#194#c#', "\n"));
-disp(x_2)
+disp(mod(x_1+x_3,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2668,7 +2668,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#195#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#195#c#', "\n"));
-disp(mod(x_0+x_2,2))
+disp(x_4)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2680,7 +2680,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#196#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#196#c#', "\n"));
-disp(x_1)
+disp(x_6)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2692,7 +2692,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#197#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#197#c#', "\n"));
-disp(x_3)
+disp(mod(x_4+x_6,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2704,7 +2704,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#198#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#198#c#', "\n"));
-disp(mod(x_1+x_3,2))
+disp(x_5)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2716,7 +2716,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#199#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#199#c#', "\n"));
-disp(x_4)
+disp(x_7)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2728,7 +2728,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#200#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#200#c#', "\n"));
-disp(x_6)
+disp(mod(x_5+x_7,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2740,7 +2740,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#201#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#201#c#', "\n"));
-disp(mod(x_4+x_6,2))
+disp(x_8)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2752,7 +2752,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#202#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#202#c#', "\n"));
-disp(x_5)
+disp(x_10)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2764,7 +2764,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#203#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#203#c#', "\n"));
-disp(x_7)
+disp(mod(x_8+x_10,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2776,7 +2776,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#204#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#204#c#', "\n"));
-disp(mod(x_5+x_7,2))
+disp(x_9)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2788,7 +2788,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#205#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#205#c#', "\n"));
-disp(x_8)
+disp(x_11)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2800,7 +2800,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#206#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#206#c#', "\n"));
-disp(x_10)
+disp(mod(x_9+x_11,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2812,7 +2812,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#207#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#207#c#', "\n"));
-disp(mod(x_8+x_10,2))
+disp(x_12)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2824,7 +2824,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#208#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#208#c#', "\n"));
-disp(x_9)
+disp(x_14)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2836,7 +2836,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#209#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#209#c#', "\n"));
-disp(x_11)
+disp(mod(x_12+x_14,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2848,7 +2848,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#210#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#210#c#', "\n"));
-disp(mod(x_9+x_11,2))
+disp(x_13)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2860,7 +2860,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#211#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#211#c#', "\n"));
-disp(x_12)
+disp(x_15)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2872,55 +2872,55 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#212#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#212#c#', "\n"));
-disp(x_14)
+disp(mod(x_13+x_15,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '213';
-octavetex.line = '324';
+octavetex.line = '345';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#213#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#213#c#', "\n"));
-disp(mod(x_12+x_14,2))
+disp(x_0)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '214';
-octavetex.line = '324';
+octavetex.line = '345';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#214#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#214#c#', "\n"));
-disp(x_13)
+disp(x_4)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '215';
-octavetex.line = '324';
+octavetex.line = '345';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#215#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#215#c#', "\n"));
-disp(x_15)
+disp(mod(x_0+x_4,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '216';
-octavetex.line = '324';
+octavetex.line = '345';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#216#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#216#c#', "\n"));
-disp(mod(x_13+x_15,2))
+disp(x_1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2932,7 +2932,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#217#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#217#c#', "\n"));
-disp(x_0)
+disp(x_5)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2944,7 +2944,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#218#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#218#c#', "\n"));
-disp(x_4)
+disp(mod(x_1+x_5,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2956,7 +2956,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#219#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#219#c#', "\n"));
-disp(mod(x_0+x_4,2))
+disp(x_2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2968,7 +2968,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#220#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#220#c#', "\n"));
-disp(x_1)
+disp(x_6)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2980,7 +2980,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#221#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#221#c#', "\n"));
-disp(x_5)
+disp(mod(x_2+x_6,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -2992,7 +2992,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#222#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#222#c#', "\n"));
-disp(mod(x_1+x_5,2))
+disp(x_3)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3004,7 +3004,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#223#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#223#c#', "\n"));
-disp(x_2)
+disp(x_7)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3016,7 +3016,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#224#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#224#c#', "\n"));
-disp(x_6)
+disp(mod(x_3+x_7,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3028,7 +3028,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#225#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#225#c#', "\n"));
-disp(mod(x_2+x_6,2))
+disp(x_8)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3040,7 +3040,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#226#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#226#c#', "\n"));
-disp(x_3)
+disp(x_12)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3052,7 +3052,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#227#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#227#c#', "\n"));
-disp(x_7)
+disp(mod(x_8+x_12,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3064,7 +3064,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#228#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#228#c#', "\n"));
-disp(mod(x_3+x_7,2))
+disp(x_9)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3076,7 +3076,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#229#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#229#c#', "\n"));
-disp(x_8)
+disp(x_13)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3088,7 +3088,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#230#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#230#c#', "\n"));
-disp(x_12)
+disp(mod(x_9+x_13,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3100,7 +3100,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#231#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#231#c#', "\n"));
-disp(mod(x_8+x_12,2))
+disp(x_10)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3112,7 +3112,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#232#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#232#c#', "\n"));
-disp(x_9)
+disp(x_14)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3124,7 +3124,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#233#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#233#c#', "\n"));
-disp(x_13)
+disp(mod(x_10+x_14,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3136,7 +3136,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#234#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#234#c#', "\n"));
-disp(mod(x_9+x_13,2))
+disp(x_11)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3148,7 +3148,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#235#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#235#c#', "\n"));
-disp(x_10)
+disp(x_15)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3160,55 +3160,55 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#236#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#236#c#', "\n"));
-disp(x_14)
+disp(mod(x_11+x_15,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '237';
-octavetex.line = '345';
+octavetex.line = '366';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#237#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#237#c#', "\n"));
-disp(mod(x_10+x_14,2))
+disp(x_0)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '238';
-octavetex.line = '345';
+octavetex.line = '366';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#238#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#238#c#', "\n"));
-disp(x_11)
+disp(x_8)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '239';
-octavetex.line = '345';
+octavetex.line = '366';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#239#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#239#c#', "\n"));
-disp(x_15)
+disp(mod(x_0+x_8,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '240';
-octavetex.line = '345';
+octavetex.line = '366';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#240#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#240#c#', "\n"));
-disp(mod(x_11+x_15,2))
+disp(x_1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3220,7 +3220,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#241#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#241#c#', "\n"));
-disp(x_0)
+disp(x_9)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3232,7 +3232,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#242#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#242#c#', "\n"));
-disp(x_8)
+disp(mod(x_1+x_9,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3244,7 +3244,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#243#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#243#c#', "\n"));
-disp(mod(x_0+x_8,2))
+disp(x_2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3256,7 +3256,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#244#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#244#c#', "\n"));
-disp(x_1)
+disp(x_10)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3268,7 +3268,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#245#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#245#c#', "\n"));
-disp(x_9)
+disp(mod(x_2+x_10,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3280,7 +3280,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#246#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#246#c#', "\n"));
-disp(mod(x_1+x_9,2))
+disp(x_3)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3292,7 +3292,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#247#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#247#c#', "\n"));
-disp(x_2)
+disp(x_11)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3304,7 +3304,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#248#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#248#c#', "\n"));
-disp(x_10)
+disp(mod(x_3+x_11,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3316,7 +3316,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#249#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#249#c#', "\n"));
-disp(mod(x_2+x_10,2))
+disp(x_4)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3328,7 +3328,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#250#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#250#c#', "\n"));
-disp(x_3)
+disp(x_12)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3340,7 +3340,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#251#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#251#c#', "\n"));
-disp(x_11)
+disp(mod(x_4+x_12,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3352,7 +3352,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#252#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#252#c#', "\n"));
-disp(mod(x_3+x_11,2))
+disp(x_5)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3364,7 +3364,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#253#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#253#c#', "\n"));
-disp(x_4)
+disp(x_13)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3376,7 +3376,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#254#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#254#c#', "\n"));
-disp(x_12)
+disp(mod(x_5+x_13,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3388,7 +3388,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#255#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#255#c#', "\n"));
-disp(mod(x_4+x_12,2))
+disp(x_6)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3400,7 +3400,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#256#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#256#c#', "\n"));
-disp(x_5)
+disp(x_14)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3412,7 +3412,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#257#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#257#c#', "\n"));
-disp(x_13)
+disp(mod(x_6+x_14,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3424,7 +3424,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#258#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#258#c#', "\n"));
-disp(mod(x_5+x_13,2))
+disp(x_7)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3436,7 +3436,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#259#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#259#c#', "\n"));
-disp(x_6)
+disp(x_15)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3448,97 +3448,97 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#260#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#260#c#', "\n"));
-disp(x_14)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '261';
-octavetex.line = '366';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#261#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#261#c#', "\n"));
-disp(mod(x_6+x_14,2))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '262';
-octavetex.line = '366';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#262#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#262#c#', "\n"));
-disp(x_7)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '263';
-octavetex.line = '366';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#263#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#263#c#', "\n"));
-disp(x_15)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '264';
-octavetex.line = '366';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#264#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#264#c#', "\n"));
 disp(mod(x_7+x_15,2))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '265';
+octavetex.instance = '261';
 octavetex.line = '383';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#265#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#265#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#261#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#261#c#', "\n"));
 disp(a_1)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '266';
+octavetex.instance = '262';
 octavetex.line = '383';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#262#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#262#c#', "\n"));
+disp(xx_1)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '263';
+octavetex.line = '388';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#263#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#263#c#', "\n"));
+disp(xx_1)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '264';
+octavetex.line = '388';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#264#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#264#c#', "\n"));
+disp(x)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '265';
+octavetex.line = '403';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#265#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#265#c#', "\n"));
+disp(a_2)
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '266';
+octavetex.line = '403';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#266#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#266#c#', "\n"));
-disp(xx_1)
+disp(xx_2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '267';
-octavetex.line = '388';
+octavetex.line = '408';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#267#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#267#c#', "\n"));
-disp(xx_1)
+disp(xx_2)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '268';
-octavetex.line = '388';
+octavetex.line = '408';
 
 octavetex.before()
 
@@ -3550,72 +3550,24 @@ octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
 octavetex.instance = '269';
-octavetex.line = '403';
+octavetex.line = '409';
 
 octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#269#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#269#c#', "\n"));
-disp(a_2)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '270';
-octavetex.line = '403';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#270#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#270#c#', "\n"));
-disp(xx_2)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '271';
-octavetex.line = '408';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#271#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#271#c#', "\n"));
-disp(xx_2)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '272';
-octavetex.line = '408';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#272#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#272#c#', "\n"));
-disp(x)
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '273';
-octavetex.line = '409';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#273#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#273#c#', "\n"));
 disp(a(2,:))
 octavetex.after()
 octavetex.command = 'code';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '274';
+octavetex.instance = '270';
 octavetex.line = '10';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#274#code#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#274#code#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#270#code#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#270#code#', "\n"));
 function [C, w] = q4c_i
  g = [1 0 0 1 0 0 1 0 0;0 1 0 0 1 0 0 1 0;0 0 1 0 0 1 0 0 1];
  C = [];
@@ -3644,6 +3596,54 @@ octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
+octavetex.instance = '271';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#271#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#271#c#', "\n"));
+disp(C(1,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '272';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#272#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#272#c#', "\n"));
+disp(C(2,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '273';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#273#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#273#c#', "\n"));
+disp(C(3,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
+octavetex.instance = '274';
+octavetex.line = '44';
+
+octavetex.before()
+
+fprintf(strcat('=>PYTHONTEX:STDOUT#274#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#274#c#', "\n"));
+disp(C(4,:))
+octavetex.after()
+octavetex.command = 'c';
+octavetex.set_context('');
+octavetex.args = '';
 octavetex.instance = '275';
 octavetex.line = '44';
 
@@ -3651,7 +3651,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#275#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#275#c#', "\n"));
-disp(C(1,:))
+disp(C(5,:))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3663,7 +3663,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#276#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#276#c#', "\n"));
-disp(C(2,:))
+disp(C(6,:))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3675,7 +3675,7 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#277#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#277#c#', "\n"));
-disp(C(3,:))
+disp(C(7,:))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
@@ -3687,90 +3687,42 @@ octavetex.before()
 
 fprintf(strcat('=>PYTHONTEX:STDOUT#278#c#', "\n"));
 fprintf(stderr, strcat('=>PYTHONTEX:STDERR#278#c#', "\n"));
-disp(C(4,:))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '279';
-octavetex.line = '44';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#279#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#279#c#', "\n"));
-disp(C(5,:))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '280';
-octavetex.line = '44';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#280#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#280#c#', "\n"));
-disp(C(6,:))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '281';
-octavetex.line = '44';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#281#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#281#c#', "\n"));
-disp(C(7,:))
-octavetex.after()
-octavetex.command = 'c';
-octavetex.set_context('');
-octavetex.args = '';
-octavetex.instance = '282';
-octavetex.line = '44';
-
-octavetex.before()
-
-fprintf(strcat('=>PYTHONTEX:STDOUT#282#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#282#c#', "\n"));
 disp(C(8,:))
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '283';
+octavetex.instance = '279';
 octavetex.line = '45';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#283#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#283#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#279#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#279#c#', "\n"));
 disp(w)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '284';
+octavetex.instance = '280';
 octavetex.line = '45';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#284#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#284#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#280#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#280#c#', "\n"));
 disp(w)
 octavetex.after()
 octavetex.command = 'c';
 octavetex.set_context('');
 octavetex.args = '';
-octavetex.instance = '285';
+octavetex.instance = '281';
 octavetex.line = '51';
 
 octavetex.before()
 
-fprintf(strcat('=>PYTHONTEX:STDOUT#285#c#', "\n"));
-fprintf(stderr, strcat('=>PYTHONTEX:STDERR#285#c#', "\n"));
+fprintf(strcat('=>PYTHONTEX:STDOUT#281#c#', "\n"));
+fprintf(stderr, strcat('=>PYTHONTEX:STDERR#281#c#', "\n"));
 disp(C(8,:))
 octavetex.after()
 

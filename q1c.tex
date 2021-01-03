@@ -1,7 +1,7 @@
 % !TeX root = ./TMA02.tex
-Sim(2,7) has $\left|V(8,7)\right|/\left|\textrm{Sim}(2,7)\right| = 7^8/7^2 = 7^6$ cosets. 
+Sim(2,7) has $\left|V(8,7)\right|/\left|\textrm{Sim}(2,7)\right| = 7^8/7^2 = 7^6$ cosets.\marginnote{\textbf{Theorem~6.4} \hill~p57.}[-0.2cm]
 
-Now in our case, $d(C) = 2t + 1 = 7$, so we are guaranteed that $<=t, <= 3$ errors can be corrected in any codeword. Thus, in the top part of the Slepian standard array the coset-leaders will be those that have a weight of three or less. Thus, in the top part of the Slepian standard array we will have one vector of weight zero, namely $00000000$. For the case where the weight is one we can choose for a given coordinate position in a vector of length eight any one of the values from $\{1,2,\ldots,6\}$. As there are eight coordinate positions in the vector we have
+Now in our case, $d(C) = 2t + 1 = 7$,\marginnote{\hill~p74.}[0cm] so we are guaranteed that $<=t, <= 3$ errors can be corrected in any codeword. In the top part of the Slepian standard array the coset-leaders will be those that have a weight of three or less and in this part of the array we will have one vector of weight zero, namely $00000000$. For the case where the weight is one we can choose for a given coordinate position in a vector of length eight any one of the values from $\{1,2,\ldots,6\}$. As there are eight coordinate positions in the vector we have
 \[
 	8\times\binom{8}{1} = 8\times\frac{8!}{(8-1)!\times1!} = 6\cdot8=48,
 \]
@@ -62,7 +62,10 @@ s8 = y8*H';
 y = [4, 5, 6, 3, 2, 0, 3, 6];
 s = syndrome(y, H);
 \end{octavecode}
-Shown in Table~\ref{tab:1 } are the syndromes for the vectors $\octave{disp(y1)},\octave{disp(y2)},\ldots.\octave{disp(y8)}$. To correct the received vector, assuming at most one error, $\octave{disp(y)}$ which has syndrome $\octavec{disp(s)}$ observe that $\octavec{disp(s2)}\times 3 = \octavec{disp(mod(s2*3,7))}$. Hence, the received vector $\octavec{disp(y)}$ is in the same coset as that with coset-leader $\octavec{disp(y2)} \times 3 =\octavec{disp(y2*3)}$. So, we decode the received vector as $\octavec{disp(y)} - \octavec{disp(y2*3)} = \octavec{disp(y-y2*3)}$.
+Shown in Table~\ref{tab:1 } are the syndromes for the vectors 
+\[\octave{disp(y1)},\octave{disp(y2)},\ldots,\octave{disp(y8)}.\] 
+To correct the received vector $\octave{disp(y)}$, assuming at most one error, which has syndrome 
+$\octavec{disp(s)}$, observe that the syndrome of $\octavec{disp(y2)}\times 3$ is equal to $ \octavec{disp(mod(y2*3*H',7))}\Mod{7}$. Hence, the received vector $\octavec{disp(y)}$ is in the same coset as that with coset-leader $\octavec{disp(y2)} \times 3 =\octavec{disp(y2*3)}$. So, we decode the received vector as $\octavec{disp(y)} - \octavec{disp(y2*3)} = \octavec{disp(y-y2*3)}$.
 \begin{table}[!htp]\centering
 \begin{tabular}{ccc}\toprule
 vector & syndrome \\\midrule
@@ -78,7 +81,6 @@ vector & syndrome \\\midrule
 \end{tabular}
 \caption{Syndromes of vectors $10000000, 01000000,\ldots,00000001$.}\label{tab:1 }
 \end{table}
-
 
 
 
