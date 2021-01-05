@@ -409,28 +409,28 @@ disp(mod(1 + 8 + 27*0 + 64*5 + 125*2 + 216*5,7))
 	a24 = A(2,4);
 	G = [eye(2),A];
 	
-	v = [4, 5]
+	v = [4, 5];
 	test1 = mod(v*G, q);
 	GT = G';
 	check = mod(H*G', q);
 =>PYTHONTEX#octave#default#0#93#c####q2d.tex#31#
-disp(y)
+disp(y1)
 =>PYTHONTEX#octave#default#0#94#c####q2d.tex#46#
-disp(y(1,1))
+disp(y1(1,1))
 =>PYTHONTEX#octave#default#0#95#c####q2d.tex#46#
-disp(y(1,2))
+disp(y1(1,2))
 =>PYTHONTEX#octave#default#0#96#c####q2d.tex#46#
-disp(y(1,1))
+disp(y1(1,1))
 =>PYTHONTEX#octave#default#0#97#c####q2d.tex#46#
-disp(y(1,2))
+disp(y1(1,2))
 =>PYTHONTEX#octave#default#0#94#c####q2d.tex#46#
-disp(y(1,1))
+disp(y1(1,1))
 =>PYTHONTEX#octave#default#0#95#c####q2d.tex#46#
-disp(y(1,2))
+disp(y1(1,2))
 =>PYTHONTEX#octave#default#0#96#c####q2d.tex#46#
-disp(y(1,1))
+disp(y1(1,1))
 =>PYTHONTEX#octave#default#0#97#c####q2d.tex#46#
-disp(y(1,2))
+disp(y1(1,2))
 =>PYTHONTEX#octave#default#0#98#c####q2d.tex#56#
 disp(a11)
 =>PYTHONTEX#octave#default#0#99#c####q2d.tex#57#

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.10)  3 JAN 2021 22:17
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.10.10)  5 JAN 2021 14:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,11 +1291,22 @@ Package marginnote Info: xpos seems to be 267.55592pt on input line 4.
 (./pythontex-files-TMA02/octave_default_0_50.stdout))) [4]
 \openout2 = `q2.aux'.
 
- (./q2.tex (./q2a.tex (./pythontex-files-TMA02/octave_default_0_51.stdout)
+ (./q2.tex (./q2a.tex
+Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 13
+.
+Package marginnote Info: right page because not two side mode on input line 13.
+
+Package marginnote Info: xpos seems to be 462.73056pt on input line 13.
+Package marginnote Info: Margin note 5.2 is on absolute page 5 on input line 13
+.
+Package marginnote Info: right page because not two side mode on input line 13.
+
+Package marginnote Info: xpos seems to be 215.57285pt on input line 13.
+(./pythontex-files-TMA02/octave_default_0_51.stdout)
 (./pythontex-files-TMA02/octave_default_0_52.stdout)) (./q2b.tex
 (./pythontex-files-TMA02/octave_default_0_54.stdout)
 (./pythontex-files-TMA02/octave_default_0_55.stdout)
-Package marginnote Info: Margin note 5.1 is on absolute page 5 on input line 91
+Package marginnote Info: Margin note 5.3 is on absolute page 5 on input line 91
 .
 Package marginnote Info: right page because not two side mode on input line 91.
 
@@ -1380,7 +1391,6 @@ Package marginnote Info: xpos seems to be 85.35826pt on input line 3.
 (./pythontex-files-TMA02/octave_default_0_89.stdout)
 (./pythontex-files-TMA02/octave_default_0_90.stdout)
 (./pythontex-files-TMA02/octave_default_0_91.stdout) [9]) (./q2d.tex
-(./pythontex-files-TMA02/octave_default_0_92.stdout)
 (./pythontex-files-TMA02/octave_default_0_93.stdout)
 (./pythontex-files-TMA02/octave_default_0_94.stdout)
 (./pythontex-files-TMA02/octave_default_0_95.stdout)
@@ -1406,10 +1416,10 @@ Package marginnote Info: xpos seems to be 85.35826pt on input line 3.
 (./pythontex-files-TMA02/octave_default_0_111.stdout)
 (./pythontex-files-TMA02/octave_default_0_112.stdout)
 (./pythontex-files-TMA02/octave_default_0_113.stdout)
+(./pythontex-files-TMA02/octave_default_0_114.stdout)
 (./pythontex-files-TMA02/octave_default_0_115.stdout)
 (./pythontex-files-TMA02/octave_default_0_116.stdout)
 (./pythontex-files-TMA02/octave_default_0_117.stdout)) (./q2e.tex
-(./pythontex-files-TMA02/octave_default_0_118.stdout)
 (./pythontex-files-TMA02/octave_default_0_119.stdout)
 (./pythontex-files-TMA02/octave_default_0_120.stdout)
 (./pythontex-files-TMA02/octave_default_0_121.stdout)
@@ -1455,6 +1465,7 @@ Package marginnote Info: xpos seems to be 85.35826pt on input line 3.
 (./pythontex-files-TMA02/octave_default_0_161.stdout)
 (./pythontex-files-TMA02/octave_default_0_162.stdout)
 (./pythontex-files-TMA02/octave_default_0_163.stdout)
+(./pythontex-files-TMA02/octave_default_0_164.stdout)
 (./pythontex-files-TMA02/octave_default_0_165.stdout)
 (./pythontex-files-TMA02/octave_default_0_166.stdout)
 (./pythontex-files-TMA02/octave_default_0_167.stdout))) [11]
@@ -1482,7 +1493,7 @@ Overfull \hbox (23.14548pt too wide) detected at line 27
 \OML/cmm/b/it/12 x \OT1/cmr/m/n/12 = [] [] \OML/cmm/m/it/12 :
  []
 
-[13] [14] (./pythontex-files-TMA02/octave_default_0_168.stdout)
+[13] [14]
 
 LaTeX Warning: Characters dropped after `\end{comment}' on input line 269.
 
@@ -1678,10 +1689,6 @@ LaTeX Warning: Characters dropped after `\end{comment}' on input line 269.
 (./pythontex-files-TMA02/octave_default_0_262.stdout)
 (./pythontex-files-TMA02/octave_default_0_263.stdout)
 (./pythontex-files-TMA02/octave_default_0_264.stdout)
-Overfull \hbox (70.76286pt too wide) detected at line 366
-[]
- []
-
 (./pythontex-files-TMA02/octave_default_0_265.stdout)
 (./pythontex-files-TMA02/octave_default_0_266.stdout)
 (./pythontex-files-TMA02/octave_default_0_265.stdout)
@@ -1695,7 +1702,13 @@ Overfull \hbox (22.04082pt too wide) detected at line 383
 (./pythontex-files-TMA02/octave_default_0_267.stdout)
 (./pythontex-files-TMA02/octave_default_0_268.stdout) [17]
 (./pythontex-files-TMA02/octave_default_0_269.stdout)
+(./pythontex-files-TMA02/octave_default_0_270.stdout)
 (./pythontex-files-TMA02/octave_default_0_269.stdout)
+(./pythontex-files-TMA02/octave_default_0_270.stdout)
+Overfull \hbox (22.04082pt too wide) detected at line 403
+[]
+ []
+
 (./pythontex-files-TMA02/octave_default_0_271.stdout)
 (./pythontex-files-TMA02/octave_default_0_272.stdout)
 (./pythontex-files-TMA02/octave_default_0_271.stdout)
@@ -1768,7 +1781,14 @@ Package marginnote Info: Margin note 21.1 is on absolute page 21 on input line
 8.
 Package marginnote Info: right page because not two side mode on input line 8.
 Package marginnote Info: xpos seems to be 171.57599pt on input line 8.
- (./pythontex-files-TMA02/octave_default_0_274.stdout)
+ (./pythontex-files-TMA02/octave_default_0_275.stdout)
+(./pythontex-files-TMA02/octave_default_0_276.stdout)
+(./pythontex-files-TMA02/octave_default_0_277.stdout)
+(./pythontex-files-TMA02/octave_default_0_278.stdout)
+(./pythontex-files-TMA02/octave_default_0_279.stdout)
+(./pythontex-files-TMA02/octave_default_0_280.stdout)
+(./pythontex-files-TMA02/octave_default_0_281.stdout)
+(./pythontex-files-TMA02/octave_default_0_282.stdout)
 (./pythontex-files-TMA02/octave_default_0_275.stdout)
 (./pythontex-files-TMA02/octave_default_0_276.stdout)
 (./pythontex-files-TMA02/octave_default_0_277.stdout)
@@ -1776,13 +1796,10 @@ Package marginnote Info: xpos seems to be 171.57599pt on input line 8.
 (./pythontex-files-TMA02/octave_default_0_279.stdout)
 (./pythontex-files-TMA02/octave_default_0_280.stdout)
 (./pythontex-files-TMA02/octave_default_0_281.stdout)
-(./pythontex-files-TMA02/octave_default_0_275.stdout)
-(./pythontex-files-TMA02/octave_default_0_276.stdout)
-(./pythontex-files-TMA02/octave_default_0_277.stdout)
-(./pythontex-files-TMA02/octave_default_0_278.stdout)
-(./pythontex-files-TMA02/octave_default_0_279.stdout)
-(./pythontex-files-TMA02/octave_default_0_280.stdout)
-(./pythontex-files-TMA02/octave_default_0_281.stdout)
+(./pythontex-files-TMA02/octave_default_0_282.stdout)
+(./pythontex-files-TMA02/octave_default_0_283.stdout)
+(./pythontex-files-TMA02/octave_default_0_284.stdout)
+(./pythontex-files-TMA02/octave_default_0_285.stdout)
 Package marginnote Info: Margin note 21.2 is on absolute page 21 on input line 
 53.
 Package marginnote Info: right page because not two side mode on input line 53.
@@ -1813,11 +1830,11 @@ Package marginnote Info: xpos seems to be 438.85641pt on input line 128.
 AED: lastpage setting LastPage
 (./TMA02.aux (./q1.aux) (./q2.aux) (./q3.aux) (./q4.aux)) ) 
 Here is how much of TeX's memory you used:
- 26625 strings out of 479917
- 522390 string characters out of 5882705
- 913801 words of memory out of 5000000
- 41323 multiletter control sequences out of 15000+600000
- 553785 words of font info for 128 fonts, out of 8000000 for 9000
+ 26639 strings out of 479917
+ 522926 string characters out of 5882705
+ 913849 words of memory out of 5000000
+ 41325 multiletter control sequences out of 15000+600000
+ 553834 words of font info for 129 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  102i,24n,118p,689b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/
@@ -1839,7 +1856,7 @@ nts/type1/public/cm-super/sfbx1200.pfb></usr/local/texlive/2020/texmf-dist/font
 s/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2020/texmf-dist/fonts/
 type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2020/texmf-dist/fonts/ty
 pe1/public/cm-super/sfrm1440.pfb>
-Output written on TMA02.pdf (24 pages, 241691 bytes).
+Output written on TMA02.pdf (24 pages, 241443 bytes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
  109 compressed objects within 2 object streams

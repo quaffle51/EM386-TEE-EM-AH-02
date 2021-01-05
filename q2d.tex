@@ -15,7 +15,7 @@
 	a24 = A(2,4);
 	G = [eye(2),A];
 	
-	v = [4, 5]
+	v = [4, 5];
 	test1 = mod(v*G, q);
 	GT = G';
 	check = mod(H*G', q);
@@ -28,23 +28,23 @@ The generator matrix in standard form is of the form $G = [I_{t}|A_{t\times n-t}
 	0 & 1 & a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4}
 	\end{pmatrix} 
 \]
-We have a valid codeword namely $\bm{y_1} = \octavec{disp(y)}$. Thus, to generate this codeword we calculate
+We have a valid codeword namely $\bm{y_1} = \octavec{disp(y1)}$ from part~(c). Thus, to generate this codeword we calculate
 \begin{align*}
-			\bm{y} &= [\octavec{disp(y(1,1))}\ \octavec{disp(y(1,2))}\ ]\;
+			\bm{y} &= [\octavec{disp(y1(1,1))}\ \octavec{disp(y1(1,2))}\ ]\;
 							\begin{pmatrix}[cc|cccc]
 	1 & 0 & a_{1,1} & a_{1,2} & a_{1,3} & a_{1,4} \\ 
 	0 & 1 & a_{2,1} & a_{2,2} & a_{2,3} & a_{2,4}
 	\end{pmatrix},\\
 					&=  
-					 [\octavec{disp(y(1,1))}\;
-					\octavec{disp(y(1,2))}\;\;
+					 [\octavec{disp(y1(1,1))}\;
+					\octavec{disp(y1(1,2))}\;\;
 					a_{1,1} + a_{2,1}\;\;
 					a_{1,2} + a_{2,2}\;\;
 					a_{1,3} + a_{2,3}\;\;
 					a_{1,4} + a_{2,4}
 					].
 \end{align*}
-We also have the valid codeword $\bm{y_2} = 104664$. Thus, to generate this codeword we calculate
+We also have the valid codeword $\bm{y_2} = 104664$ obtained in part~(b). Thus, to generate this codeword we calculate
 \begin{align*}
 			\bm{y} &= [1 0]\;
 							\begin{pmatrix}[cc|cccc]
